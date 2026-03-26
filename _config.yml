@@ -4,6 +4,11 @@ title: SiMuR-UO WearablePerMed Documentation
 description: WearablePerMed Documentation
 color_scheme: nil
 
+# Important: Remove any other "theme:" lines
+# Add this to help the plugin load correctly
+plugins:
+  - jekyll-remote-theme
+  
 earch_enabled: true
 search:
   # Split pages into sections that can be searched individually
@@ -39,5 +44,3 @@ back_to_top: true
 back_to_top_text: Inicio
 
 footer_content: "Esta documentación tiene licencia <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GNU General Public License v2.0</a>"
-
-#theme: jekyll-theme-tactile
