@@ -1,2 +1,2 @@
 # Description
-Uniovi Simur WearablePerMed Wiki
+Uniovi SiMuR WearablePerMed Wiki Site

@@ -4,33 +4,28 @@ title: Inicio
 nav_order: 1
 ---
 
-# Introducción a Docker
+# Introducción a WearablePerMed
 {: .fs-9 }
 
-Curso "Introducción a Docker".
-{: .fs-6 .fw-300 }
+Documentación "Introducción a WearablePerMed".
 
+{: .fs-6 .fw-300 }
 
 ## Objetivos
 
-* Conocer las ventajas que nos proporciona el uso de la tecnología de contenedores.
-* Conocer los conceptos principales sobre el despliegue de aplicaciones web utilizando contenedores.
-* Conocer los conceptos fundamentales sobre docker.
-* Trabajar con imágenes docker.
-* Desplegar aplicaciones web sencillas en contenedores.
-* Introducción al uso del almacenamiento en docker.
-* Introducción al uso de la redes en docker.
-* Ser capaz de usar contenedores de terceros y de construir mis propios contenedores.    
-* Creación de imágenes docker.
-* Desplegar escenarios multicontenedor usando docker-compose.
-* Estudiar el ciclo de vida del desarrollo, pruebas y despliegue de aplicaciones utilizando contenedores.
+* Introducción al proyecto WearablePerMed.
+* Conocer los artefactos creados para implementar una solución.
+* Conocer arquitectura y relación existente entre todos estos artefactos.
+* Conocer los roles y los artefactos disponibles para cada uno de ellos.
+* Documentación funcional de la herramienta WearablePerMed Portal.
+* Documentación técnica de como mantener y actualizar cada uno de estos artefactos.
 
 ## Contenidos
 
-* [Sesión 1: Introducción a los contenedores y a Docker](sesion1)
-* [Sesión 2: Trabajando con imágenes docker](sesion2)
-* [Sesión 3: Almacenamiento en docker](sesion3)
-* [Sesión 4: Redes en docker](sesion4)
-* [Sesión 5: Creando escenarios multicontenedor con docker-compose](sesion5)
-* [Sesión 6: Creación de imágenes en docker](sesion6)
+* [Sección 1: Introducción al sistema](section1)
+* [Sección 2: Artefactos del sistema](section2)
+* [Sección 3: Arquitectura del sistema](section3)
+* [Sección 4: Roles y artefactos disponibles](section4)
+* [Sección 5: Documentación técnica del sistema](section5)
+* [Sección 6: Documentación funcional WearablePerMed Portal](section6)
 
