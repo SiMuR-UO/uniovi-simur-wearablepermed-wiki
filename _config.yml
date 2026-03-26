@@ -1,7 +1,7 @@
 
 remote_theme: pmarsceill/just-the-docs
-title: Docker
-description: Curso "Introducción a docker"
+title: SiMuR-UO WearablePerMed Documentation
+description: WearablePerMed Documentation
 color_scheme: nil
 
 earch_enabled: true
@@ -31,8 +31,8 @@ search:
 
 # Aux links for the upper right navigation
 aux_links:
-  "Accede al repositorio en GitHub":
-    - "//github.com/masalinas/training_docker"
+  "SiMuR-UO on GitHub":
+    -  https://github.com/SiMuR-UO
 
 # Back to top link
 back_to_top: true
@@ -40,4 +40,4 @@ back_to_top_text: Inicio
 
 footer_content: "Esta documentación tiene licencia <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GNU General Public License v2.0</a>"
 
-theme: jekyll-theme-tactile
+#theme: jekyll-theme-tactile
