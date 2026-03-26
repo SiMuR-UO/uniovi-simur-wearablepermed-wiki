@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Sección 5-1
+title: "Sección 5-1"
 nav_order: 5
-parent: Documentación técnica
+parent: "Documentación técnica"
 ---
 
 # Descripción
