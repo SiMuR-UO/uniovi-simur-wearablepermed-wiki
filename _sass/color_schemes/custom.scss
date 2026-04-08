@@ -1,2 +1,13 @@
-$content-width: 1200px;
-$nav-width: 250px;
+// Align sidebar to the left with no space
+.side-bar {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.site-nav {
+    padding-left: 0.5rem;
+}
+
+.site-title {
+    padding-left: 0.5rem;
+}
