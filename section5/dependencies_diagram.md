@@ -13,5 +13,4 @@ This diagram represent the artifacts relations. Actually we manage two types of 
 
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
-
-<object data="{{ site.baseurl }}/assets/images/diagram_dependencies.svg" type="image/svg+xml" width="100%"></object>
+<iframe src="{{ site.baseurl }}/assets/images/diagram_dependencies.svg" width="100%" height="600px" frameborder="0"></iframe>
