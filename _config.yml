@@ -9,6 +9,8 @@ description: WearablePerMed Documentation
 plugins:
   - jekyll-remote-theme
 
+color_scheme: custom
+
 search_enabled: true
 search:
   # Split pages into sections that can be searched individually
