@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Dependencies"
-nav_order: 5
-parent: "Documentación técnica"
+nav_order: 1
+parent: "Artefactos del sistema"
 ---
 
 # Descripción
