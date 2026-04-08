@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Dependencies"
-nav_order: 5
+nav_order: 1
 parent: "Documentación técnica"
 ---
 

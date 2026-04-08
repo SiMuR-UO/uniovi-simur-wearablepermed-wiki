@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Sección 2-1"
-nav_order: 1
+title: "Sección 2-2"
+nav_order: 2
 parent: "Artefactos del sistema"
 ---
 
