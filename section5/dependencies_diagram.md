@@ -13,6 +13,4 @@ This diagram represent the artifacts relations. Actually we manage two types of 
 
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
-![Dependencies Diagram](img/diagram_dependencies.png "Dependencies Diagram")
-
-[TODO]
+![Dependencies Diagram](assets/images//diagram_dependencies.png "Dependencies Diagram")

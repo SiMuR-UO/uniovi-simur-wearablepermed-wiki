@@ -1,0 +1,16 @@
+--- 
+---
+@import "./support/support";
+
+/* This removes the max-width limit and centers the content better */
+.main-content-wrap {
+    max-width: 100% !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.main-content {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
