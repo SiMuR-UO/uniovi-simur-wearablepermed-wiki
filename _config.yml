@@ -1,14 +1,15 @@
 
-# 1. Use the official, maintained theme to avoid 'nav.html' errors
+# Use the official, maintained theme to avoid 'nav.html' errors
 remote_theme: just-the-docs/just-the-docs
 
 title: WearablePerMed Wiki
 description: WearablePerMed Documentation
 
-# 2. Plugins section (Corrected)
+# Plugins section (Corrected)
 plugins:
   - jekyll-remote-theme
 
+# Custom styles
 color_scheme: custom
 
 search_enabled: true
