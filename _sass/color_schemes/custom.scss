@@ -1,12 +1,4 @@
 // Align sidebar to the left with no space
-#top {
-    max-width: 100%;
-}
-
-.main {
-    max-width: 100%;
-}
-
 .side-bar {
     padding-left: 0;
     margin-left: 0;
@@ -30,6 +22,5 @@
 
     .main {
         margin-left: 15.625rem !important;
-        max-width: 100%;
     }
 }
