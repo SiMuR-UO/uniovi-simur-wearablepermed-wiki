@@ -1,0 +1,24 @@
+// Align sidebar to the left with no space
+.side-bar {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.site-nav {
+    padding-left: 0.5rem;
+}
+
+.site-title {
+    padding-left: 0.5rem;
+}
+
+@media (min-width: 66.5rem) {
+    .side-bar {
+        width: 250px !important;
+        min-width: 0 !important;
+    }
+
+    .main {
+        margin-left: 250px !important;
+    }
+}
