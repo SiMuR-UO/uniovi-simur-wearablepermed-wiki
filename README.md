@@ -10,3 +10,4 @@ saludable de importancia para uso médico y predictivo, empleando el wearable y 
 datos masivo y detección de patrones; 3) crear una plataforma web fácil y segura para su uso en atención primaria compilando los algoritmos validados en las fases anteriores que permitirá, obtener un informe con
 recomendaciones individualizadas de ejercicio para el paciente; y finalmente, 4) la validación efectiva de esta herramienta en las rutinas diarias de los profesionales de este nivel asistencial en dos comunidades
 autónomas. Este proyecto podría ser un primer paso para que el SNS español sea pionero mundial en el uso de los wearables en la práctica clínico-asistencial.
+
