@@ -16,5 +16,5 @@ If you need access to some of these repositories contact with [Admin Support](ma
 <object 
     data="{{ site.baseurl }}/section3/assets/images/artefactor_architecture.svg"
     type="image/svg+xml"
-    width="100%">
+    style="max-width: 800px; width: 100%;">
 </object>

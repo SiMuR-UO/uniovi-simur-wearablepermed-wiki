@@ -20,4 +20,5 @@ If you need access to some of these repositories contact with [Admin Support](ma
 <object 
     data="{{ site.baseurl }}/section3/assets/images/disk_architecture.svg"
     type="image/svg+xml"
-    style="max-width: 500px; width: 100%;"></object>
+    style="max-width: 800px; width: 100%;">
+</object>
