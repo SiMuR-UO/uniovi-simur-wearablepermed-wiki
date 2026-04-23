@@ -13,5 +13,8 @@ This diagram represent the artifacts relations. Actually we manage two types of 
 
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
-
-<object data="{{ site.baseurl }}/section3/assets/images/artefactor_architecture.svg" type="image/svg+xml" width="100%"></object>
+<object 
+    data="{{ site.baseurl }}/section3/assets/images/artefactor_architecture.svg"
+    type="image/svg+xml"
+    style="max-width: 500px; width: 100%;">
+</object>
