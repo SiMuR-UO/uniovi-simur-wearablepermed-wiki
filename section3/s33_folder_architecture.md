@@ -11,5 +11,5 @@ This diagram represent the folder architecture.
 <object 
     data="{{ site.baseurl }}/section3/assets/images/folder_architecture.svg"
     type="image/svg+xml"
-    style="max-width: 800px; width: 100%;">
+    style="max-width: 1200px; width: 100%;">
 </object>
