@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Dependencies"
+title: "Artefact Architecture"
 nav_order: 1
-parent: "Artefactos del sistema"
+parent: "Arquitectura del sistema"
 ---
 
 # Descripción
@@ -14,4 +14,4 @@ This diagram represent the artifacts relations. Actually we manage two types of 
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
 
-<object data="{{ site.baseurl }}/section2/assets/images/diagram_dependencies.svg" type="image/svg+xml" width="100%"></object>
+<object data="{{ site.baseurl }}/section3/assets/images/diagram_dependencies.svg" type="image/svg+xml" width="100%"></object>
