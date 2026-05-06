@@ -5,7 +5,7 @@ nav_order: 1
 parent: "Arquitectura del sistema"
 ---
 
-# Descripción
+# Description
 This diagram represent the artifacts relations. Actually we manage two types of articfacts:
 
 - **Python Packages**: these artifacts are published inside [Simur Pypi Python Repository](https://pypi.org/manage/projects/){:target="_blank"}.
@@ -13,7 +13,7 @@ This diagram represent the artifacts relations. Actually we manage two types of 
 
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
-<object 
+<object
     data="{{ site.baseurl }}/section3/assets/images/artefactor_architecture.svg"
     type="image/svg+xml"
     width="100%">

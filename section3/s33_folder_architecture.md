@@ -5,10 +5,10 @@ nav_order: 3
 parent: "Arquitectura del sistema"
 ---
 
-# Descripción
+# Description
 This diagram represent the folder architecture.
 
-<object 
+<object
     data="{{ site.baseurl }}/section3/assets/images/folder_architecture.svg"
     type="image/svg+xml"
     style="max-width: 1200px; width: 100%;">

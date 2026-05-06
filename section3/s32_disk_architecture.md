@@ -5,7 +5,7 @@ nav_order: 2
 parent: "Arquitectura del sistema"
 ---
 
-# Descripción
+# Description
 This diagram represent the disk architecture. Actually we manage tree node in this architecture:
 
 - **Server Node**: this node represent the servers where we train our models. These nodes manage:
@@ -17,7 +17,7 @@ This diagram represent the disk architecture. Actually we manage tree node in th
 
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
-<object 
+<object
     data="{{ site.baseurl }}/section3/assets/images/disk_architecture.svg"
     type="image/svg+xml"
     style="max-width: 800px; width: 100%;">
