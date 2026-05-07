@@ -9,7 +9,7 @@ parent: "Arquitectura del sistema"
 This diagram represent the Pretrain pipeline and its steps.
 
 <object
-    data="{{ site.baseurl }}/section3/assets/images/pretrain-pipeline.svg"
+    data="{{ site.baseurl }}/section2/assets/images/pretrain-pipeline.svg"
     type="image/svg+xml"
     style="max-width: 1200px; width: 100%;">
 </object>

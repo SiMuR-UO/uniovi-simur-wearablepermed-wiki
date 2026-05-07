@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Arquitectura del sistema"
+title: "Artefactos del sistema"
 nav_order: 4
 has_children: true
 ---
@@ -8,3 +8,4 @@ has_children: true
 # Introducción
 
 [TODO]
+
