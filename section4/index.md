@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "WearablePerMed Portal"
-nav_order: 7
+nav_order: 4
 has_children: true
 ---
 

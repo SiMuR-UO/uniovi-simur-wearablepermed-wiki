@@ -5,7 +5,7 @@ nav_order: 1
 parent: "Artefactos del sistema"
 ---
 
-# Descripción
+# Description
 
 In this section we explain how start any project, code, fix and debug. We follow the patterns mono-repository to implement all repos. Actually we manage these respository:
 

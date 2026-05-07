@@ -5,6 +5,6 @@ nav_order: 1
 parent: "WearablePerMed Portal"
 ---
 
-# Descripción
+# Description
 
 [TODO]

@@ -5,7 +5,7 @@ nav_order: 2
 parent: "Artefactos del sistema"
 ---
 
-# Descripción
+# Description
 
 This section explain all steps that must be executed sequentially to create the pretrain datasets from raw segment bodies datasets obtained from these inertial sensors, located in:
 

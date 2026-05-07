@@ -5,7 +5,7 @@ nav_order: 3
 parent: "Artefactos del sistema"
 ---
 
-# Descripción
+# Description
 
 This section explain how we can execute all steps implemented in the previous python module called **utils** in a squencial way implemented using a pipeline and all arguments this pipeline offer to execute diferent user cases. The result of these repository are pretrain datasets to be used to traing models using later repositories.
 
