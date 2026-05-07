@@ -2,7 +2,7 @@
 # Use the official, maintained theme to avoid 'nav.html' errors
 remote_theme: just-the-docs/just-the-docs
 
-title: WearablePerMed Wiki
+title: SiMuR WPM Wiki
 description: WearablePerMed Documentation
 
 # Plugins section (Corrected)
