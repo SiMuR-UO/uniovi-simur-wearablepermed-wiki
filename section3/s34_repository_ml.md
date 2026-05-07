@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Sección 3-2"
-nav_order: 1
+title: "Machine Learning Repository"
+nav_order: 4
 parent: "Artefactos del sistema"
 ---
 
