@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Pipeline Machine Learning Repository"
+title: "Preditor Repository"
 nav_order: 6
 parent: "Artefactos del sistema"
 ---
