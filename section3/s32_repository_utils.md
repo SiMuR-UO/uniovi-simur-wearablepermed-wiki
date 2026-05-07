@@ -7,72 +7,11 @@ parent: "Artefactos del sistema"
 
 # Descripción
 
-This repository implement all steps that must be executed sequentially to create the pretrain datasets from raw segment bodies datasets obtained from these inertial sensors, located in:
+This section explain all steps that must be executed sequentially to create the pretrain datasets from raw segment bodies datasets obtained from these inertial sensors, located in:
 
 - Wrist
 - Thight
 - Hip
-
-## Schaffolding
-The schaffolding of the project is create using this tool [PyScaffold](https://pyscaffold.org/en/stable/):
-
-- By default this tool not use markdown as default documentation language, so ti use this standard documentation format we must install a pyscaffoldext extension called **pyscaffoldext-markdown**, executing this command:
-    ```
-    $ pip install pyscaffoldext-markdown
-    ```
-
-- After this we can scaffold our project using the argument **--markdown** executing this command:
-    ```
-    $ putup --markdown uniovi-simur-wearablepermed-utils -p wearablepermed_utils \
-        -d "Uniovi Simur WearablePerMed Utils." \
-        -u https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-utils.git 
-    ```
-
-- After create the default project, we must create a new virtual environment inside the project and active it:
-    ```
-    $ python -m venv .venv
-    $ source .venv/bin/activate
-    ```
-
-- Install and upgrade tox automation project manager. We will use these tools to build and publish the python modules in Pypi:
-    ```
-    $ pip install --upgrade tox
-    ```
-
-- Finally, afte this we can install out particulary python dependencies like: Pandas, Scipy, Matplotlib, etc:
-    ```
-    $ pip install -U numpy pandas scipy openpyxl matplotlib
-    ```
-
-## Code and Debugging
-
-Install library modules:
-```
-$ pip install -r requirements.txt
-```
-
-Install module locally for debugg
-```
-$ pip install -e .
-```
-
-Save project requirements:
-```
-$ pip freeze > requirements.txt
-```
-
-## Project management
-
-Project commands for: test, clean, build, generate documentation or publish your library in pypi repository
-Don't forget update the version library from **setup.cfg** project build file:
-
-```
-$ tox
-$ tox -e clean
-$ tox -e build
-$ tox -e docs
-$ tox -e publish -- --repository pypi
-```
 
 ## Testing
 

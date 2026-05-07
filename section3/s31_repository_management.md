@@ -98,13 +98,13 @@ After update these versions, the command offered by **tox** tool are these ones:
 - **docs**: to create technical documentation for our project.
 - **publish**: to publish our build python module in PyPI. We must be logged in the Simur PyPI account (have the credentials installed in your computer) to publish any repo. These are squecially the commands to be executed using tox:
 
-```
-$ tox
-$ tox -e clean
-$ tox -e build
-$ tox -e docs
-$ tox -e publish -- --repository pypi
-```
+    ```
+    $ tox
+    $ tox -e clean
+    $ tox -e build
+    $ tox -e docs
+    $ tox -e publish -- --repository pypi
+    ```
 
 ## Testing
 
