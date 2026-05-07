@@ -7,4 +7,4 @@ parent: "Artefactos del sistema"
 
 # Description
 
-This section explain how we can predict and classify or new datasets using our previous machine learning models.
+This section explain how we can predict and classify new datasets using our previous machine learning models trained.

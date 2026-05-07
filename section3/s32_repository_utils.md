@@ -7,11 +7,41 @@ parent: "Artefactos del sistema"
 
 # Description
 
-This section explain all steps that must be executed sequentially to create the pretrain datasets from raw segment bodies datasets obtained from these inertial sensors, located in:
+This section explain all steps that must be executed sequentially to create the pretrain datasets from raw segment bodies datasets obtained from inertial sensors with accelerometer and gyroscope sensors, located in:
 
 - Wrist
 - Thight
 - Hip
+
+
+## Python library arguments
+
+We are going to list all commands and its arguments implemented in this python library:
+
+| Step | Command | Argument | Type    | Optional | Def Value | Sample | Description |
+| ---- | ------- | -------- | ------- | -------- | ------ -- | ------ | ----------- |
+| 1 | sensor_bin_to_csv | bin-file | | | | | |
+| 1 | sensor_bin_to_csv | csv-file | | | | | |
+| 2 | csv_to_segmented_activity | csv-file | | | | | |
+| 2 | csv_to_segmented_activity | excel-activity-log | | | | | |
+| 2 | csv_to_segmented_activity | body-segment | | | | | |
+| 2 | csv_to_segmented_activity | output | | | | | |
+| 2 | csv_to_segmented_activity | sample-init | | | | | |
+| 2 | csv_to_segmented_activity | start-time | | | | | |
+| 3 | segmented_activity_to_stack | npz-file | | | | | |
+| 3 | segmented_activity_to_stack | crop-columns | | | | | |
+| 3 | segmented_activity_to_stack | window-size | | | | | |
+| 3 | segmented_activity_to_stack | window-overlapping-percent | | | | | |
+| 3 | segmented_activity_to_stack | output | | | | | |
+| 4 | stack_to_features | stack-file | | | | | |
+| 4 | stack_to_features | output | | | | | |
+| 5 | aggregate_windows_features | dataset-folder | | | | | |
+| 5 | aggregate_windows_features | ml-model | | | | | |
+| 5 | aggregate_windows_features | ml-sensors | | | | | |
+| 5 | aggregate_windows_features | output-folder | | | | | |
+| 6 | model_aggregation | dataset-folder | | | | | |
+| 6 | model_aggregation | output-folder | | | | | |
+| 6 | model_aggregation | case-id | | | | | |
 
 ## Testing
 

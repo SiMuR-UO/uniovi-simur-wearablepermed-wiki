@@ -7,12 +7,13 @@ parent: "Artefactos del sistema"
 
 # Description
 
-In this section we explain how start any project, code, fix and debug. We follow the patterns mono-repository to implement all repos. Actually we manage these respository:
+In this section we explain how start any project, code, fix and debug. We follow the pattern mono-repository to implement all repos. Actually we manage these respositories:
 
-- **Utils Repository**: this repository implemente all steps used in the pretrain step.
-- **Pipeline Repository**: This repository automates the execution of all utils steps repository.
-- **Machine Learning Repository**: This repository is used to train the machines learning models using the datasets creates with the pipeline repository.
-- **Machine Learning Pipeline Repository**: This repository is used to test and calculate the metrics from the previous models created with the Machine Learning Repository.
+- **Utils Repository**: this repository implemente all steps used in the pretrain steps.
+- **Pipeline Repository**: This repository automates the execution of all utils steps implemented in the **Utils Repository**.
+- **Machine Learning Repository**: This repository is used to train the machines learning models using the datasets created with the **Pipeline Repository**.
+- **Machine Learning Pipeline Repository**: This repository is used to test and calculate the metrics from the models created with the **Machine Learning Repository**.
+-- **Predictor Repository**: This repository implement the clasificaction of any raw dataset using one of the previous models of **Machine Learning Repository**.
 
 ## Get starting: Project Schaffolding
 

@@ -7,4 +7,4 @@ parent: "Artefactos del sistema"
 
 # Description
 
-This section explain how we can train diferents models, using the pretreain datasets generated with previous reppositories.
+This section explain how we can train diferents models, using the pretreain datasets generated with previous python libraries.

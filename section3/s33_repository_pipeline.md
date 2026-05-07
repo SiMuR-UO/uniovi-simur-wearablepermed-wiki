@@ -7,11 +7,11 @@ parent: "Artefactos del sistema"
 
 # Description
 
-This section explain how we can execute all steps implemented in the previous python module called **utils** in a squencial way, implemented as a pipeline and all arguments that this pipeline offer to execute different user cases. The result of these repository are pretrain datasets to be used to traing models using later repositories.
+This section explain how we can execute all steps implemented in the previous python library called **utils** in a squencial way, implemented as a pipeline and all arguments that this pipeline offer to execute different user cases. The result of this python library are pretrain datasets to be used to traing models using later python libraries.
 
-## Project Arguments
+## Python library
 
-We are going to list the different arguments that can be used for this python module
+We are going to list the different arguments that can be used for this python library:
 
 | Argument | Type    | Optional | Def Value | Sample | Description |
 | -------- | ------- | -------- | ------ -- | ------ | ----------- |
@@ -30,7 +30,8 @@ We are going to list the different arguments that can be used for this python mo
 
 ## Testing
 
-Execute one pipeline from this command:
+Sample of execution of one pipeline from this python library:
+
 ```
 python3 main.py \
     --verbose \
