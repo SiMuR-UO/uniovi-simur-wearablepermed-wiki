@@ -25,7 +25,5 @@ Documentación "Introducción a WearablePerMed".
 * [Sección 1: Introducción al sistema](section1)
 * [Sección 2: Artefactos del sistema](section2)
 * [Sección 3: Arquitectura del sistema](section3)
-* [Sección 4: Roles y artefactos disponibles](section4)
-* [Sección 5: Documentación técnica del sistema](section5)
-* [Sección 6: Documentación funcional WearablePerMed Portal](section6)
+* [Sección 4: Documentación funcional WearablePerMed Portal](section4)
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Sección 6-1"
-nav_order: 1
+title: Technical documentation"
+nav_order: 2
 parent: "WearablePerMed Portal"
 ---
 
