@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Sección 6-1"
+title: "Functional documentation"
 nav_order: 1
 parent: "WearablePerMed Portal"
 ---
 
-# Descripción
+# Description
 
 [TODO]

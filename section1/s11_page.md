@@ -5,6 +5,6 @@ nav_order: 1
 parent: "Introducción"
 ---
 
-# Descripción
+# Description
 
 [TODO]

@@ -27,10 +27,8 @@ In this repository we include its contribution emphasizing the software artifact
 
 ## Contents
 
-* [Section 1: The WearablePerMed Project](section1)
-* [Section 2: System artifacts](section2)
-* [Section 3: System architecture](section3)
-* [Section 4: Roles and available artifacts](section4)
-* [Section 5: Technical documentation](section5)
-* [Section 6: WearablePerMed Portal functional documentation](section6)
+* [Sección 1: Introducción al sistema](section1)
+* [Sección 2: Artefactos del sistema](section2)
+* [Sección 3: Arquitectura del sistema](section3)
+* [Sección 4: Documentación funcional WearablePerMed Portal](section4)
 

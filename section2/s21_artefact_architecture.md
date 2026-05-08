@@ -19,7 +19,7 @@ This diagram groupe all artifacts in two groups::
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
 <object
-    data="{{ site.baseurl }}/section3/assets/images/artefactor_architecture.svg"
+    data="{{ site.baseurl }}/section2/assets/images/artefactor_architecture.svg"
     type="image/svg+xml"
     width="100%">
 </object>
