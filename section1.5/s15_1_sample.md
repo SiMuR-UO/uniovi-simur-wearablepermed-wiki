@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Subsection"
-nav_order: 1
+nav_order: 2
 parent: "Section 1.5"
 ---
 
