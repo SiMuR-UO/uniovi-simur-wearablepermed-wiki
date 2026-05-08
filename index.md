@@ -27,7 +27,7 @@ Within this repository, we present this contribution with an emphasis on softwar
 
 ## Contents
 
-* [Section 1: Introduction](section1)
+* [Section 1: The WearablePerMed Project](section1)
 * [Section 2: System Architecture](section3)
 * [Section 3: System Artifacts](section3)
 * [Section 4: WearablePerMed Portal Functional Documentation](section4)
