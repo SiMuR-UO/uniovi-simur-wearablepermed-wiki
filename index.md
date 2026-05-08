@@ -7,11 +7,11 @@ nav_order: 1
 # SiMuR - WearablePerMed Project
 {: .fs-9 }
 
-This repository contains technical information about the development work of the [Multisensor Systems and Robotics Group, University of Oviedo](https://simur.dieecs.com/) in the WearablePerMed project.
+This repository provides technical information on the contribution of the [Multisensor Systems and Robotics Group, University of Oviedo](https://simur.dieecs.com/) to the WearablePerMed project.
 
-In WearablePerMed, the SiMuR contribution is mainly devoted to the development of phase 2, concerning the development of mathematical algorithms using massive data processing and pattern-detection techniques.
+It is primarily focused on Phase 2, which involves the development of mathematical algorithms based on large-scale data processing and pattern detection techniques.
 
-In this repository we include its contribution emphasizing the software artifacts that may be of interest for this or other research projects.
+Within this repository, we present this contribution with an emphasis on software artifacts that may be valuable for this and other research initiatives.
 
 
 {: .fs-6 .fw-300 }
@@ -19,6 +19,7 @@ In this repository we include its contribution emphasizing the software artifact
 ## Objectives
 
 * Introduction to the WearablePerMed project.
+* Describe the main research studies carried out.
 * Learn about the software artifacts created to implement a solution for the different research goals .
 * Understand the architecture and the relationship among all these artifacts.
 * Learn about the roles and the artifacts available for each of them.
@@ -27,8 +28,8 @@ In this repository we include its contribution emphasizing the software artifact
 
 ## Contents
 
-* [Sección 1: Introducción al sistema](section1)
-* [Sección 2: Arquitectura del sistema](section3)
-* [Sección 3: Artefactos del sistema](section3)
-* [Sección 4: Documentación funcional WearablePerMed Portal](section4)
+* [Section 1: The WearablePerMed Project](section1)
+* [Section 2: System Architecture](section3)
+* [Section 3: System Artifacts](section3)
+* [Section 4: WearablePerMed Portal Functional Documentation](section4)
 
