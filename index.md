@@ -19,6 +19,7 @@ Within this repository, we present this contribution with an emphasis on softwar
 ## Objectives
 
 * Introduction to the WearablePerMed project.
+* Describe the main research studies carried out.
 * Learn about the software artifacts created to implement a solution for the different research goals .
 * Understand the architecture and the relationship among all these artifacts.
 * Learn about the roles and the artifacts available for each of them.
