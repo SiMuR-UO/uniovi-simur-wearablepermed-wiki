@@ -7,11 +7,11 @@ nav_order: 1
 # SiMuR - WearablePerMed Project
 {: .fs-9 }
 
-This repository contains technical information about the development work of the [Multisensor Systems and Robotics Group, University of Oviedo](https://simur.dieecs.com/) in the WearablePerMed project.
+This repository provides technical information on the contribution of the [Multisensor Systems and Robotics Group, University of Oviedo](https://simur.dieecs.com/) to the WearablePerMed project.
 
-In WearablePerMed, the SiMuR contribution is mainly devoted to the development of phase 2, concerning the development of mathematical algorithms using massive data processing and pattern-detection techniques.
+It is primarily focused on Phase 2, which involves the development of mathematical algorithms based on large-scale data processing and pattern detection techniques.
 
-In this repository we include its contribution emphasizing the software artifacts that may be of interest for this or other research projects.
+Within this repository, we present this contribution with an emphasis on software artifacts that may be valuable for this and other research initiatives.
 
 
 {: .fs-6 .fw-300 }

@@ -13,11 +13,15 @@ The use of this device places the IMPaCT cohort at the forefront of physical act
 
 This approach is unique among large-scale cohorts, as previous studies have relied exclusively on accelerometry data and typically from a single body location. While this methodology enables the collection of exceptionally rich and high-quality data, it also poses substantial analytical challenges. Each participant generates nearly 400 million data points over a 7-day continuous monitoring period (24 hours per day), requiring advanced large-scale data processing and algorithm development. The analysis of these data will provide valuable insights not only into physical activity, but also into broader health domains such as sleep, chronobiology, and the detection of chronic and infectious diseases.
 
+# MATIRX for the IMPaCT
+
+- [Vídeo explicativo de colocación, programación y descarga](https://youtu.be/U4BEnQwD80s)
+
+- [Video explicativo de instalación de la aplicación MATRIX en teléfono Android](https://www.youtube.com/watch?v=mnXzZG3uTSI)
+
+- [Protocolo de acelerometría IMPaCT](https://drive.google.com/file/d/1enUvaSX1R2ahuztUOFWtrJwmjEgE1tOn/view?usp=share_link)
 
 
+# MATRIX technical Info
 
-
-
-## Enlaces de interés
-
-* [Grupo de Investigación SiMuR, Universidad de Oviedo](https://simur.dieecs.com/){:target="_blank"}
+- The repository https://github.com/SiMuR-UO/matrix-wearable-monitor.git contains basic information about the wearable (app to conver raw -BIN files into CSV and documentacion of the codification of the .BIN file).
