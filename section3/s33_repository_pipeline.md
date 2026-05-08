@@ -9,7 +9,7 @@ parent: "Artefactos del sistema"
 
 This section explain how we can execute all steps implemented in the previous python library called **utils** in a squencial way, implemented as a pipeline and all arguments that this pipeline offer to execute different user cases. The result of this python library are pretrain datasets to be used to traing models using later python libraries.
 
-## Python library
+## Python library arguments
 
 We are going to list the different arguments that can be used for this python library:
 

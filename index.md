@@ -28,7 +28,7 @@ In this repository we include its contribution emphasizing the software artifact
 ## Contents
 
 * [Sección 1: Introducción al sistema](section1)
-* [Sección 2: Artefactos del sistema](section2)
-* [Sección 3: Arquitectura del sistema](section3)
+* [Sección 2: Arquitectura del sistema](section3)
+* [Sección 3: Artefactos del sistema](section3)
 * [Sección 4: Documentación funcional WearablePerMed Portal](section4)
 
