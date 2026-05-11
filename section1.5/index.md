@@ -2,8 +2,6 @@
 layout: default
 title: "The WearablePerMed Dataset"
 nav_order: 3
-<!-- has_children: true -->
-
 ---
 
 # The WearablePerMed Dataset
