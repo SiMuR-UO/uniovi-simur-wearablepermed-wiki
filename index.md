@@ -26,6 +26,7 @@ Within this repository, we present this contribution with an emphasis on softwar
 * Functional documentation for the WearablePerMed Portal tool.
 * Technical documentation on how to maintain and update each of these artifacts.
 
+<!-->
 ## Contents
 
 * [Section 1: The WearablePerMed Project](section1)
@@ -33,3 +34,4 @@ Within this repository, we present this contribution with an emphasis on softwar
 * [Section 3: System Artifacts](section3)
 * [Section 4: WearablePerMed Portal Functional Documentation](section4)
 
+-->
