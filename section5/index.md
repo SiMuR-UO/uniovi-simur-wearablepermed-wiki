@@ -5,7 +5,7 @@ nav_order: 7
 has_children: true
 ---
 
-Esta sección describe los principales estudios realizados. Cada estudio tiene su propia página con la descripción completa; a continuación se ofrece un resumen breve y un enlace a la página dedicada.
+This section describes the main studies conducted using the WearablePerMed dataset. Each study has its own page with a full description; a brief summary and a link to the dedicated page are provided below.
 
 * [MATRIX Evaluation](s5_1_page): Evaluation of magnetometer-less IMUs (including MATRIX) for 3D orientation estimation.
 
