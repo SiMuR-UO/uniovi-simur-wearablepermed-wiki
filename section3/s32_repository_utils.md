@@ -18,7 +18,7 @@ This section explain all steps that must be executed sequentially to create the 
 
 We are going to list all commands and its arguments implemented in this python library:
 
-| Step | Command | Argument | Type    | Optional | Def Value | Sample | Description |
+| Step | Command | Argument | Type    | Optional | Def Value | Sample | Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 | ---- | ------- | -------- | ------- | -------- | ------ -- | ------ | ----------- |
 | 1 | sensor_bin_to_csv | bin-file | string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_M.BIN | Sensor binary file path to convert to csv |
 | 1 | sensor_bin_to_csv | csv-file |  string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_M.csv | Sensor csv file converted from binary one |
