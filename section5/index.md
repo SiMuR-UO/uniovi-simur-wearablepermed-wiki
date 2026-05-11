@@ -16,3 +16,5 @@ This section describes the main studies being conducted using the WearablePerMed
 * [Semi-supervised Classification](s5_5_page): Semi-supervised pipeline using labeled lab data and unlabeled free-living recordings to improve single-sensor HAR via representation learning and consistency-based methods.
 
 * [Image Annotation](s5_6_page): Page for image annotation tools and procedures used in related labeling tasks.
+
+* [Step Counting]

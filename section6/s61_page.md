@@ -39,11 +39,15 @@ Performance metrics included orientation error, variability (STD) under static a
 
 While MATRIX represents a strong low-cost baseline, its performance is constrained by higher sensor noise. Custom open-source IMUs with simple fusion algorithms can outperform MATRIX and approach high-end commercial systems, highlighting the importance of hardware selection in orientation estimation.
 
-### Dissemination
+### Reference
 
 
 - Alonso, Alejandro & Carro, Gonzalo & Alvarez, Juan & Alvarez, Diego & López, Antonio & Tirado, Diego. (2026). Evaluation of Magnetometer-Less Inertial Sensors for Static and Dynamic Spatial Orientation Estimation. IEEE Transactions on Instrumentation and Measurement. PP. 1-1. 10.1109/TIM.2026.3670515. 
 
 - A. C. Alonso, G. García Carro, J. C. Álvarez, D. Álvarez and A. M. López, "Evaluation of Magnetometer-less Inertial Sensors for Static Spatial Orientation Estimation," 2025 IEEE International Instrumentation and Measurement Technology Conference (I2MTC), Chemnitz, Germany, 2025, pp. 1-6, doi: 10.1109/I2MTC62753.2025.11079213. keywords: {Accelerometers;Measurement units;Accuracy;Inertial sensors;Magnetometers;Noise;Estimation;US Department of Transportation;Standards;Noise level;orientation estimation;inertial unit of measurement;accelerometers;biomechanics},
 
-** JORNADAS DE DOCTORADO Y OTRAS **
+### Dissemination
+
+
+
+*** JORNADAS DE DOCTORADO Y OTRAS ***

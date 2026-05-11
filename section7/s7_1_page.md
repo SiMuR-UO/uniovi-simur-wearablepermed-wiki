@@ -6,6 +6,7 @@ parent: "Technical Reports"
 ---
 
 # MATRIX Evaluation
+
 This work evaluates the capability of magnetometer-less IMUs for estimating 3D orientation, with a focus on comparing open-source solutions against commercial devices, including the MATRIX IMU.
 
 The study investigates whether a custom-built IMU combined with open-source sensor-fusion algorithms can reach performance comparable to high-end proprietary systems (e.g., Xsens) and to commercial low-cost platforms such as MATRIX.

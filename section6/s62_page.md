@@ -5,7 +5,7 @@ nav_order: 2
 parent: "Other Research Studies"
 ---
 
-# Monosensor vs. Dual-Sensor Human Activity Recognition
+# Monosensor vs. Dual-Sensor Human Activity Recognition from public HAR datasets
 
 This study explores the effectiveness of combining wearable sensors placed at different body locations (wrist and thigh) for human activity recognition using Deep Convolutional Neural Networks (CNNs).
 
@@ -51,4 +51,8 @@ Simultaneous dual-location wearable monitoring significantly enhances human acti
 
 ### Reference
 
-Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (2023). Human Activity Recognition from Thigh and Wrist Accelerometry. Multisensor Systems and Robotics Lab (SiMuR), University of Oviedo.
+Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (2023). Human Activity Recognition from Thigh and Wrist Accelerometry. ESANN 2024 proceedings, European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning. Bruges (Belgium) and online event, 9-11 October 2024, i6doc.com publ., ISBN 978-2-87587-090-2. Available from http://www.i6doc.com/en/.
+
+### Disemination
+
+*** Jornadas de dcotorado y otros ***
