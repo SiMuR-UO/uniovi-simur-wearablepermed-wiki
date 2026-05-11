@@ -29,9 +29,9 @@ We are going to list all commands and its arguments implemented in this python l
 | 2 | csv_to_segmented_activity | sample-init | number | Yes | | 13917630 | When the participant sensor close time was not saved, it represents the unit of measure used to normalize the dataset |
 | 2 | csv_to_segmented_activity | start-time | time format: HH:MM:SS | Yes | | 17:37:45 | When the participant sensor close time was not saved, it represents the time of measure used to normalize the dataset|
 | 3 | segmented_activity_to_stack | npz-file | string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_M_seg.npz | input of the stack npz file with the participant segment body segments |
-| 3 | segmented_activity_to_stack | crop-columns | number format: number:number | No | 1:7 | | Number of intertial characteristics to be used: accelerometer x,y,z and gyroscope x,y,z represented by numbers from 1 to 7|
-| 3 | segmented_activity_to_stack | window-size | number | No | 250 | | Size of the windows used in the windows step |
-| 3 | segmented_activity_to_stack | window-overlapping-percent | string percent | No | 50 | | Overlapping to be used in percentage in the windows steps|
+| 3 | segmented_activity_to_stack | crop-columns | number format: number:number | No | 1:7 | 1:3 | Number of intertial characteristics to be used: accelerometer x,y,z and gyroscope x,y,z represented by numbers from 1 to 7|
+| 3 | segmented_activity_to_stack | window-size | number | No | 250 | 250 | Size of the windows used in the windows step |
+| 3 | segmented_activity_to_stack | window-overlapping-percent | string percent | No | 50 | 0 | Overlapping to be used in percentage in the windows steps|
 | 3 | segmented_activity_to_stack | output | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_tot_M.npz | name of the dataset with the windows |
 | 4 | stack_to_features | stack-file | string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_tot_M.npz | |
 | 4 | stack_to_features | output | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_tot_M_features.npz | |
