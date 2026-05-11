@@ -62,7 +62,7 @@ Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (20
 </iframe>
 
 
-**Contribución en formato póster al European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (2024).**
+**Contribución en formato póster al European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (octubre de 2024).**
 
 <iframe src="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf" width="100%" height="1000px">
     <p>Tu navegador no soporta PDFs. <a href="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf">Descarga el PDF</a></p>
