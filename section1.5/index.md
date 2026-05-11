@@ -6,4 +6,4 @@ nav_order: 3
 
 # The WearablePerMed Dataset
 
-Following the protocol [Study Protocols (PDF)](Study%20Protocols.pdf), a massive data compilation was approached by the Castilla-LaManca and Madrid Groups for around two years.
+Following the protocol outlined in [Study Protocols (PDF)](Study%20Protocols.pdf), the Castilla-La Mancha and Madrid Groups conducted a large-scale data collection effort over approximately two years, involving more than 100 participants.
