@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Section 1.5"
-nav_order: 2.5
+title: "The WearablePerMed Dataset"
+nav_order: 1
 has_children: true
 ---
 
