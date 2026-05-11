@@ -32,16 +32,16 @@ We are going to list all commands and its arguments implemented in this python l
 | 3 | segmented_activity_to_stack | crop-columns | number format: number:number | No | 1:7 | | Number of intertial characteristics to be used: accelerometer x,y,z and gyroscope x,y,z represented by numbers from 1 to 7|
 | 3 | segmented_activity_to_stack | window-size | number | No | 250 | | Size of the windows used in the windows step |
 | 3 | segmented_activity_to_stack | window-overlapping-percent | string percent | No | 50 | | Overlapping to be used in percentage in the windows steps|
-| 3 | segmented_activity_to_stack | output | string absolute folder path | No | | | |
-| 4 | stack_to_features | stack-file | string absolute file path | No | | | |
-| 4 | stack_to_features | output | string absolute folder path | No | | | |
-| 5 | aggregate_windows_features | dataset-folder | string absolute folder path | No | | | |
-| 5 | aggregate_windows_features | ml-model | string enum: ESANN,RandomForest| | | | |
-| 5 | aggregate_windows_features | ml-sensors | string enum: thigh,wrist,hip | No | | | |
-| 5 | aggregate_windows_features | output-folder | string absolute folder path | No | | | |
-| 6 | model_aggregation | dataset-folder | string absolute folder path | No | | | |
-| 6 | model_aggregation | output-folder | string absolute folder path | No | | | |
-| 6 | model_aggregation | case-id | string | No | | | |
+| 3 | segmented_activity_to_stack | output | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_tot_M.npz | name of the dataset with the windows |
+| 4 | stack_to_features | stack-file | string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_tot_M.npz | |
+| 4 | stack_to_features | output | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_tot_M_features.npz | |
+| 5 | aggregate_windows_features | dataset-folder | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053 | Where is the participant folfer witl all window and features datasets to be aggregated |
+| 5 | aggregate_windows_features | ml-model | string enum: ESANN,RandomForest | No | | RandomForest | for what model must be generate the partial dataset |
+| 5 | aggregate_windows_features | ml-sensors | string enum: thigh,wrist,hip | No | | wrist| what segment bodies do you want include in the partial dataset per participant|
+| 5 | aggregate_windows_features | output-folder | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_all_features.npz.npz | Name of the final partial dataset stack file with all segments bodies to be included|
+| 6 | model_aggregation | dataset-folder | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/input | Folder where all participants partical pre-train datasets are located|
+| 6 | model_aggregation | output-folder | string absolute folder path | No | | /mnt/nvme0n1p1/wearablepermed/output | Folder where the user cases are located |
+| 6 | model_aggregation | case-id | string | No | | case_C_BRF_acc_gyr_15_classes | Name of the user case when the final dataset result will be saved|
 
 ## Testing
 
