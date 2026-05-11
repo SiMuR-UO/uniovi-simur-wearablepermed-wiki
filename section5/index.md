@@ -5,9 +5,7 @@ nav_order: 7
 has_children: true
 ---
 
-This section describes the main studies conducted using the WearablePerMed dataset. Each study has its own page with a full description; a brief summary and a link to the dedicated page are provided below.
-
-* [MATRIX Evaluation](s5_1_page): Evaluation of magnetometer-less IMUs (including MATRIX) for 3D orientation estimation.
+This section describes the main studies being conducted using the WearablePerMed dataset.
 
 * [Monosensor Classification](s5_2_page): Study on single-sensor human activity recognition exploring sensor placement, gyroscope inclusion, and activity granularity.
 
