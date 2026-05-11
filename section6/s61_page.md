@@ -41,10 +41,10 @@ While MATRIX represents a strong low-cost baseline, its performance is constrain
 
 ### Reference
 
-- A. Castellanos Alonso, G. García Carro, J. Carlos Álvarez Álvarez, D. Álvarez Prieto, A. Miguel López Rodríguez and D. Valdés Tirado, "Evaluation of Magnetometer-Less Inertial Sensors for Static and Dynamic Spatial Orientation Estimation," in IEEE Transactions on Instrumentation and Measurement, vol. 75, pp. 1-10, 2026, Art no. 1001810, doi: 10.1109/TIM.2026.3670515. [Paper available from this link 🔬](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11421575)
+- A. Castellanos Alonso, G. García Carro, J. Carlos Álvarez Álvarez, D. Álvarez Prieto, A. Miguel López Rodríguez and D. Valdés Tirado, "Evaluation of Magnetometer-Less Inertial Sensors for Static and Dynamic Spatial Orientation Estimation," in IEEE Transactions on Instrumentation and Measurement, vol. 75, pp. 1-10, 2026, Art no. 1001810, doi: 10.1109/TIM.2026.3670515. [Paper available from this link 🔬](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11421575) | [The original dataset created for this study can be accesed here 🗄️📊](https://ieee-dataport.org/documents/inertial-sensor-data-accelerometer-gyroscope-used-input-three-dimensional-orientation)
 
 - A. C. Alonso, G. García Carro, J. C. Álvarez, D. Álvarez and A. M. López, "Evaluation of Magnetometer-less Inertial Sensors for Static Spatial Orientation Estimation," 2025 IEEE International Instrumentation and Measurement Technology Conference (I2MTC), Chemnitz, Germany, 2025, pp. 1-6, doi: 10.1109/I2MTC62753.2025.11079213. keywords: {Accelerometers;Measurement units;Accuracy;Inertial sensors;Magnetometers;Noise;Estimation;US Department of Transportation;Standards;Noise level;orientation estimation;inertial unit of measurement;accelerometers;biomechanics},
 
 ### Dissemination
 
-*** JORNADAS DE DOCTORADO Y OTRAS ***
+**Jornadas de doctorado de la Universidad de Oviedo (junio de 2025).**
