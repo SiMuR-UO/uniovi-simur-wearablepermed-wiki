@@ -18,7 +18,7 @@ This section explain all steps that must be executed sequentially to create the 
 
 We are going to list all commands and its arguments implemented in this python library:
 
-| Step | Command | Argument | Type    | Optional | Def Value | Sample | Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| Step | Command | Argument | Type    | Optional | Def Value | Sample | Description |
 | ---- | ------- | -------- | ------- | -------- | ------ -- | ------ | ----------- |
 | 1 | sensor_bin_to_csv | bin-file | string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_M.BIN | Sensor binary file path to convert to csv |
 | 1 | sensor_bin_to_csv | csv-file |  string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_M.csv | Sensor csv file converted from binary one |
@@ -31,7 +31,7 @@ We are going to list all commands and its arguments implemented in this python l
 | 3 | segmented_activity_to_stack | npz-file | string absolute file path | No | | /mnt/nvme0n1p1/wearablepermed/input/PMP1053/PMP1053_W1_M_seg.npz | input of the stack npz file with the participant segment body segments |
 | 3 | segmented_activity_to_stack | crop-columns | number format: number:number | No | 1:7 | | Number of intertial characteristics to be used: accelerometer x,y,z and gyroscope x,y,z represented by numbers from 1 to 7|
 | 3 | segmented_activity_to_stack | window-size | number | No | 250 | | Size of the windows used in the windows step |
-| 3 | segmented_activity_to_stack | window-overlapping-percent | string percent | No | 50 | | Overlapping to be used in percentage in the windows steps |
+| 3 | segmented_activity_to_stack | window-overlapping-percent | string percent | No | 50 | | Overlapping to be used in percentage in the windows steps|
 | 3 | segmented_activity_to_stack | output | string absolute folder path | No | | | |
 | 4 | stack_to_features | stack-file | string absolute file path | No | | | |
 | 4 | stack_to_features | output | string absolute folder path | No | | | |
