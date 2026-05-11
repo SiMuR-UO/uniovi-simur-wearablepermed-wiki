@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Technical documentation"
-nav_order: 2
+nav_order: 1
 parent: "WearablePerMed Portal"
 ---
 
