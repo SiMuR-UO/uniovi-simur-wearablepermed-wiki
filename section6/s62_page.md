@@ -57,6 +57,10 @@ Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (20
 
 **Jornadas de doctorado de la Universidad de Oviedo (junio de 2024).**
 
-<iframe src="./Póster A1 - Jornadas Doctorales_v2.pdf" width="100%" height="600px">
+<iframe src="./Póster A1 - Jornadas Doctorales_v2.pdf" width="100%" height="1000px">
     <p>Tu navegador no soporta PDFs. <a href="./Póster A1 - Jornadas Doctorales_v2.pdf">Descarga el PDF</a></p>
+</iframe>
+
+<iframe src="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf" width="100%" height="1000px">
+    <p>Tu navegador no soporta PDFs. <a href="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf">Descarga el PDF</a></p>
 </iframe>
