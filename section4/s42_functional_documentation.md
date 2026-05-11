@@ -14,7 +14,7 @@ In this secction we are going resume the functionality of the WearablePerMed Por
 - Create team members inside our organization to analyze and visualize the results of each participant classification.
 
 
-## Get starting
+## Getting started
 
 By default the Portal has a unique Admin user to start with this credentials. It's recomendable change the default password.
 
