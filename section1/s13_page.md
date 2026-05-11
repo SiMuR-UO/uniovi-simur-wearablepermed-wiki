@@ -24,5 +24,3 @@ The project involves several phases of external and internal validity, including
 The project is funded by Spain's Carlos III Health Institute (PMP22/00028), Next Generation EU funds, and the Recovery and Resilience Mechanism.
 
 The project is aligned with the IMPaCT cohort in Spain, and is a pilot study orinted to this in the aspect to the 
-
-You can download the study protocol here: [Study Protocols (PDF)](Study%20Protocols.pdf)
