@@ -51,7 +51,7 @@ Simultaneous dual-location wearable monitoring significantly enhances human acti
 
 ### Reference
 
-Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (2023). Human Activity Recognition from Thigh and Wrist Accelerometry. ESANN 2024 proceedings, European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning. Bruges (Belgium) and online event, 9-11 October 2024, i6doc.com publ., ISBN 978-2-87587-090-2. Available from https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf.
+Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (2023). Human Activity Recognition from Thigh and Wrist Accelerometry. ESANN 2024 proceedings, European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning. Bruges (Belgium) and online event, 9-11 October 2024, i6doc.com publ., ISBN 978-2-87587-090-2. [Paper available from this link 🔬](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf.)
 
 ### Disemination
 
