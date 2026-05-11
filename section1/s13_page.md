@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "WearablePerMed"
-nav_order: 2
-parent: "Introducción"
+nav_order: 3
+parent: "Introduction"
 ---
 
 # The WearablePerMed Project

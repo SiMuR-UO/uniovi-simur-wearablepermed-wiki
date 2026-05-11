@@ -2,7 +2,7 @@
 layout: default
 title: "IMPaCT"
 nav_order: 1
-parent: "Introducción"
+parent: "Introduction"
 ---
 
 # The foundations: the IMPaCT cohort

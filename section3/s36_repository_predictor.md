@@ -2,7 +2,7 @@
 layout: default
 title: "Preditor Repository"
 nav_order: 6
-parent: "Artefactos del sistema"
+parent: "System Artifacts"
 ---
 
 # Description

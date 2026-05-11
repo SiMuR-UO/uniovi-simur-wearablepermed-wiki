@@ -2,7 +2,7 @@
 layout: default
 title: "Semi-supervised Classification"
 nav_order: 5
-parent: "Section 5"
+parent: "Dataset Research Studies"
 ---
 
 # Semi-supervised Classification

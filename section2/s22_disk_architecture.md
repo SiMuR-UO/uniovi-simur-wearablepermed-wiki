@@ -2,7 +2,7 @@
 layout: default
 title: "Disk Architecture"
 nav_order: 2
-parent: "Arquitectura del sistema"
+parent: "System Architecture"
 ---
 
 # Description

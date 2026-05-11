@@ -2,7 +2,7 @@
 layout: default
 title: "Multisensor Classification"
 nav_order: 3
-parent: "Section 5"
+parent: "Dataset Research Studies"
 ---
 
 # Multisensor Classification

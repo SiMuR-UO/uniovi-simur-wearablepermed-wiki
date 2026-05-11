@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Artefactos del sistema"
-nav_order: 4
+title: "System Artifacts"
+nav_order: 3
 has_children: true
 ---
 

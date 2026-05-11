@@ -2,7 +2,7 @@
 layout: default
 title: "Utils Repository"
 nav_order: 2
-parent: "Artefactos del sistema"
+parent: "System Artifacts"
 ---
 
 # Description

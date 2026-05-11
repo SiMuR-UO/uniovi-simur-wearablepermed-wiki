@@ -2,7 +2,7 @@
 layout: default
 title: "Artefact Architecture"
 nav_order: 1
-parent: "Arquitectura del sistema"
+parent: "System Architecture"
 ---
 
 # Description

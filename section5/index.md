@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Section 5"
-nav_order: 2
+title: "Dataset Research Studies"
+nav_order: 5
 has_children: true
 ---
 

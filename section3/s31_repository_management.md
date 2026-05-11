@@ -2,7 +2,7 @@
 layout: default
 title: "Project Management"
 nav_order: 1
-parent: "Artefactos del sistema"
+parent: "System Artifacts"
 ---
 
 # Description

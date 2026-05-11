@@ -2,7 +2,7 @@
 layout: default
 title: "Monosensor Classification"
 nav_order: 2
-parent: "Section 5"
+parent: "Dataset Research Studies"
 ---
 
 # Monosensor Classification

@@ -2,7 +2,7 @@
 layout: default
 title: "Folder Architecture"
 nav_order: 3
-parent: "Arquitectura del sistema"
+parent: "System Architecture"
 ---
 
 # Description

@@ -2,7 +2,7 @@
 layout: default
 title: "MATRIX Evaluation"
 nav_order: 1
-parent: "Section 5"
+parent: "Dataset Research Studies"
 ---
 
 # MATRIX Evaluation

@@ -2,7 +2,7 @@
 layout: default
 title: "Pretrain Pipeline"
 nav_order: 4
-parent: "Arquitectura del sistema"
+parent: "System Architecture"
 ---
 
 # Description
