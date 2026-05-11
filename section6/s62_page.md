@@ -7,7 +7,7 @@ parent: "Other Research Studies"
 
 # Monosensor vs. Dual-Sensor Human Activity Recognition from public HAR datasets
 
-This study explores the effectiveness of combining wearable sensors placed at different body locations (wrist and thigh) for human activity recognition using Deep Convolutional Neural Networks (CNNs).
+This study explores the effectiveness of combining wearable sensors placed at different body locations (wrist and thigh) for human activity recognition using Deep Convolutional Neural Networks (DCNNs).
 
 ## Motivation
 
@@ -55,4 +55,8 @@ Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (20
 
 ### Disemination
 
-*** Jornadas de dcotorado y otros ***
+*** Jornadas de dcotorado de la Universidad de Oviedo (junio de 2024) ***
+
+<iframe src="./Póster A1 - Jornadas Doctorales_v2.pdf" width="100%" height="600px">
+    <p>Tu navegador no soporta PDFs. <a href="./Póster A1 - Jornadas Doctorales_v2.pdf">Descarga el PDF</a></p>
+</iframe>
