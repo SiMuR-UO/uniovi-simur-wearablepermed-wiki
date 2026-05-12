@@ -6,9 +6,10 @@ parent: "Dataset Research Studies"
 ---
 
 # Step Counting
-This page documents the step counting pipeline.
+This study evaluates the ability of classical signal processing techniques to count steps using accelerometer data. The results obtained are placed in the context of the current state of the scientific literature in this field.
 
 ### Methodology
+
 
 ### Key Findings
 

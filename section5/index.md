@@ -17,4 +17,4 @@ This section describes the main studies being conducted using the WearablePerMed
 
 * [Image Annotation](s5_6_page): Page for image annotation tools and procedures used in related labeling tasks.
 
-* [Step Counting]
+* [Step Counting](s5_7_page): Development of step-counting algorithms applied to the nine semi-structured activities and one structured activity (treadmill).
