@@ -7,7 +7,7 @@ parent: "Introduction"
 
 # The WearablePerMed Project
 
-<img src = "assets/images/Poster_v2.pdf"> width="300" alt "WearablePerMed Project">
+<img src = "assets/images/Poster_v2.pdf" width="300" alt "WearablePerMed Project">
 
 
 Wearables are a technological revolution and open the door to a new personal universe, as well as to personalized medicine.
