@@ -6,7 +6,7 @@ parent: "Dataset Research Studies"
 ---
 
 # Step Counting
-This page documents the image annotation workflow used in related labeling tasks.
+This page documents the step counting pipeline.
 
 ### Methodology
 
