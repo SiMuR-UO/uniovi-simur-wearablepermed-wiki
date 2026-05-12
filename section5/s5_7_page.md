@@ -45,9 +45,10 @@ We developed 8 different step-counting methods:
 
 ### Reference
 
-
+The publication of a scientific article is planned for the future.
 
 
 ### Dissemination
 
+The outreach activities are currently planned to be developed.
 
