@@ -8,4 +8,4 @@ nav_order: 3
 
 Following the protocol outlined in [Study Protocols (PDF)](Study%20Protocols.pdf), the Castilla-La Mancha and Madrid Groups conducted a large-scale data collection effort over approximately two years, involving more than 100 participants.
 
-*** Hay que añadir lo del curado de datos ***
+The dataset was revised and results are detailed in [Technical Report IT-006](../section7/index.md), including correction times used for the correction of sensor sampling time drift.
