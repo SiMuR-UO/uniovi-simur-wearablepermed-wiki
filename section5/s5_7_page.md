@@ -33,7 +33,9 @@ We developed 8 different step-counting methods:
 
 ### Key Insights
 
+- There are outliers in the MAPE distribution for certain activities (“treadmill” and “walking with a mobile phone or book”). This may be due to difficulties in manually counting steps caused by obstructions in the camera. The trend observed is that the number of steps recorded as ground truth for the “walking with a mobile phone or book” activity is around 200 for all subjects.
 
+- A step will be counted each time one of the feet moves and makes contact with the ground under load, resulting in a visible forward movement of the torso in the direction of travel. The step will be recorded at the moment of initial contact (IC) of the supporting foot, whether heel or toe, as visually identified.
 
 
 ### Conclusion
