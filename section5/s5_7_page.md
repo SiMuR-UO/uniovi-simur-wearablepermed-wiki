@@ -45,7 +45,9 @@ We developed 8 different step-counting methods:
 
 ### Reference
 
-The publication of a scientific article is planned for the future.
+- Lopez AM, Alvarez D, Gonzalez RC, Alvarez JC. Validity of four gait models to estimate walked distance from vertical COG acceleration. J Appl Biomech. 2008 Nov;24(4):360-7. PMID: 19075305. | [Paper's abstract available from this link 🔬](https://pubmed.ncbi.nlm.nih.gov/19075305/)
+
+- The publication of a scientific article is planned for the future.
 
 
 ### Dissemination
