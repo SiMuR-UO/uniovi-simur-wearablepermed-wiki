@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Hard Infra Architecture"
+title: "Hard Infrastructure"
 nav_order: 2
 parent: "System Architecture"
 ---
