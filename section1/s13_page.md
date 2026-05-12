@@ -23,11 +23,11 @@ The project involves several phases of external and internal validity, including
 
 The project is funded by Spain's Carlos III Health Institute (PMP22/00028), Next Generation EU funds, and the Recovery and Resilience Mechanism.
 
-The project is aligned with the IMPaCT cohort in Spain, and is a pilot study orinted to this in the aspect to the 
+The project is aligned with the IMPaCT cohort in Spain, and is a pilot study orinted to this in the aspect to the wearable acceelrometry protocol.
 
 <table>
   <tr>
-    <td><img src="assets/images/Poster_v2.pdf" width="300" alt="WearablePerMed Project"></td>
-    <td><img src="assets/images/foto_grupo_reunion_zaragoza.jpg" width="300" alt="Reunión Avance Zaragoza 2025"></td>
+    <td><img src="assets/images/Poster_v2.pdf" width="350" alt="WearablePerMed Project"></td>
+    <td><img src="assets/images/foto_grupo_reunion_zaragoza.jpg" width="350" alt="Reunión Avance Zaragoza 2025"></td>
   </tr>
 </table>
