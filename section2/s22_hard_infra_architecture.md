@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Disk Architecture"
+title: "Hard Infra Architecture"
 nav_order: 2
 parent: "System Architecture"
 ---
 
 # Description
-This diagram represent the disk architecture. Actually we manage tree node in this architecture:
+This diagram represent the hardware infrastructure that SIMUR group offer to its projects
 
 - **Server Node**: this node represent the servers where we train our models. These nodes manage:
     - **Input data**: folder where the input datasets lieves. These represent the raw data used in the process of the pre-train steps. These files **are synchronized**.
@@ -18,7 +18,7 @@ This diagram represent the disk architecture. Actually we manage tree node in th
 If you need access to some of these repositories contact with [Admin Support](mailto:uo34525@uniovi.es)
 
 <object
-    data="{{ site.baseurl }}/section2/assets/images/disk_architecture.svg"
+    data="{{ site.baseurl }}/section2/assets/images/hard_infra_architecture.svg"
     type="image/svg+xml"
     style="max-width: 800px; width: 100%;">
 </object>
