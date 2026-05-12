@@ -20,5 +20,5 @@ If you need access to some of these repositories contact with [Admin Support](ma
 <object
     data="{{ site.baseurl }}/section2/assets/images/hard_infra_architecture.svg"
     type="image/svg+xml"
-    style="max-width: 800px; width: 100%;">
+    style="max-width: 1200px; width: 100%;">
 </object>
