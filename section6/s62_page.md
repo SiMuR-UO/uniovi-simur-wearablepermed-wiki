@@ -51,24 +51,24 @@ Simultaneous dual-location wearable monitoring significantly enhances human acti
 
 ### Reference
 
-Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (2024). Human Activity Recognition from Thigh and Wrist Accelerometry. ESANN 2024 proceedings, European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning. Bruges (Belgium) and online event, 9-11 October 2024, i6doc.com publ., ISBN 978-2-87587-090-2. | [Paper available from this link 🔬](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf) |
+- Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (2024). Human Activity Recognition from Thigh and Wrist Accelerometry. ESANN 2024 proceedings, European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning. Bruges (Belgium) and online event, 9-11 October 2024, i6doc.com publ., ISBN 978-2-87587-090-2. | [Paper available from this link 🔬](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf) |
 
 ### Disemination
 
-**University of Oviedo PhD Conference (June 2024).**
+**- University of Oviedo PhD Conference (June 2024).**
 
 <iframe src="./Póster A1 - Jornadas Doctorales_v2.pdf" width="100%" height="1000px">
     <p>Tu navegador no soporta PDFs. <a href="./Póster A1 - Jornadas Doctorales_v2.pdf">Descarga el PDF</a></p>
 </iframe>
 
 
-**Poster presentation at the European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (October 2024).**
+**- Poster presentation at the European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (October 2024).**
 
 <iframe src="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf" width="100%" height="1000px">
     <p>Tu navegador no soporta PDFs. <a href="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf">Descarga el PDF</a></p>
 </iframe>
 
-**Slides used during the oral presentation of the poster at ESANN 2024.**
+**- Slides used during the oral presentation of the poster at ESANN 2024.**
 
 <iframe src="./slides_poster_presentation.pdf" width="100%" height="1000px">
     <p>Tu navegador no soporta PDFs. <a href="./slides_poster_presentation.pdf">Descarga el PDF</a></p>

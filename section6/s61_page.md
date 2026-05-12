@@ -49,7 +49,7 @@ While MATRIX represents a strong low-cost baseline, its performance is constrain
 
 ### Dissemination
 
-**University of Oviedo PhD Conference (June 2025).**
+**- University of Oviedo PhD Conference (June 2025).**
 
 <iframe src="./Poster_A1_Jornadas_Doctorales_2025_Alejandro_Castellanos_Alonso.pdf" width="100%" height="1000px">
     <p>Tu navegador no soporta PDFs. <a href="./Poster_A1_Jornadas_Doctorales_2025_Alejandro_Castellanos_Alonso.pdf">Descarga el PDF</a></p>
