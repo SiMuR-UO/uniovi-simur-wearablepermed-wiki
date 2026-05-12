@@ -67,3 +67,9 @@ Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (20
 <iframe src="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf" width="100%" height="1000px">
     <p>Tu navegador no soporta PDFs. <a href="./ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf">Descarga el PDF</a></p>
 </iframe>
+
+**Slides used during the oral presentation of the poster at ESANN 2024.**
+
+<iframe src="./slides_poster_presentation.pdf" width="100%" height="1000px">
+    <p>Tu navegador no soporta PDFs. <a href="./slides_poster_presentation.pdf">Descarga el PDF</a></p>
+</iframe>
