@@ -9,6 +9,9 @@ parent: "Other Research Studies"
 
 This study explores the effectiveness of combining wearable sensors placed at different body locations (wrist and thigh) for human activity recognition using Deep Convolutional Neural Networks (DCNNs).
 
+A [repo](https://gitlab.com/simur/ic3_wearablepermed/clasificacion_con_dataset)is availabe with the code. Datasets are available at [here](https://simur-wearablepermed.direct.quickconnect.to:5001/?launchApp=SYNO.SDS.Drive.Application#file_id=950306542643622432)
+
+
 ## Motivation
 
 The IMPaCT cohort protocol includes simultaneous wearable monitoring on both wrist and thigh, hypothesizing that dual-location placement would enhance activity classification accuracy compared to single-location monitoring.
