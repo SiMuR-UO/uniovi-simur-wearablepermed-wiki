@@ -45,9 +45,13 @@ We developed 8 different step-counting methods:
 
 ### Reference
 
-- Lopez AM, Alvarez D, Gonzalez RC, Alvarez JC. Validity of four gait models to estimate walked distance from vertical COG acceleration. J Appl Biomech. 2008 Nov;24(4):360-7. PMID: 19075305. | [Paper's abstract available from this link 🔬](https://pubmed.ncbi.nlm.nih.gov/19075305/)
+- Lopez AM, Alvarez D, Gonzalez RC, Alvarez JC. Validity of four gait models to estimate walked distance from vertical COG acceleration. J Appl Biomech. 2008 Nov;24(4):360-7. PMID: 19075305. | [Paper's abstract available from this link 🔬](https://pubmed.ncbi.nlm.nih.gov/19075305/) |
 
-- The publication of a scientific article is planned for the future.
+- Alvarez, J.C.; Álvarez, D.; López, A.M. Accelerometry-Based Distance Estimation for Ambulatory Human Motion Analysis. Sensors 2018, 18, 4441. https://doi.org/10.3390/s18124441. | [Paper available from this link 🔬](https://www.mdpi.com/1424-8220/18/12/4441) |
+
+- Koffman, L., & Muschelli, J., III. (2024). Evaluating Step Counting Algorithms on Subsecond Wrist-Worn Accelerometry: A Comparison Using Publicly Available Data Sets. Journal for the Measurement of Physical Behaviour, 7(1), Article jmpb.2024-0008, jmpb.2024-0008. Retrieved Apr 18, 2026, from https://doi.org/10.1123/jmpb.2024-0008. | [Paper's abstract available from this link 🔬](https://journals.humankinetics.com/view/journals/jmpb/7/1/article-jmpb.2024-0008.xml) |
+
+- **The publication of a scientific article is planned for the future.**
 
 
 ### Dissemination
