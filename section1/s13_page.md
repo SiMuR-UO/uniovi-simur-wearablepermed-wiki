@@ -7,9 +7,13 @@ parent: "Introduction"
 
 # The WearablePerMed Project
 
+![](assets/images/Poster_v2.pdf)
+
 Wearables are a technological revolution and open the door to a new personal universe, as well as to personalized medicine.
 
 The **WearablePermed** research project includes six research groups from six autonomous communities in Spain (Asturias, Cádiz, Castilla-La Mancha, Castilla y León, Madrid, and Zaragoza), with a coherent multidisciplinary approach that brings together researchers from the fields of sports science, medicine, nursing, mathematics, and engineering. Its overall objective is to assess the feasibility of implementing wearable technology in primary care within the Spanish National Health System (SNS), promoting precision preventive medicine and initially focusing on personalized exercise medicine.
+
+![Reunión Avance Zaragoza 2025](assets/images/foto_grupo_reunion_zaragoza.jpg)
 
 The project involves several phases of external and internal validity, including: 
 
