@@ -63,7 +63,26 @@ pipeline \
     --output-case-folder /data/output \
     --case-id case_sample
 
+Run the pipeline for specific participants only (pass a space-separated list quoted as a single string):
+
+```bash
+pipeline \
+    --verbose \
+    --execute-steps 1,2,3,4,5,6 \
+    --dataset-folder /data/input \
+    --participants "PMP1053_W1 PMP1054_W1" \
+    --participants-missing-file /data/missing_end_datetimes.csv \
+    --crop-columns 1:7 \
+    --window-size 250 \
+    --window-overlapping-percent 50 \
+    --ml-models ESANN,RandomForest \
+    --ml-sensors thigh,hip,wrist \
+    --output-case-folder /data/output \
+    --case-id case_sample
 ```
+
+Notes about `--participants`: the pipeline splits the provided string on whitespace and filters dataset subfolders accordingly; provide either a single participant id or a quoted space-separated list.
+
 
 
 ## Commands & Arguments
