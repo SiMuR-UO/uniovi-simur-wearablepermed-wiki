@@ -45,7 +45,13 @@ We can divide these services in two groups:
 | wearablepermed-backend-participant | simuruo/uniovi-simur-wearablepermed-backend-participant | 1.4.0   | SpringBoot (Java) | Implement the backend system business model infrastructures like: participants, resources and predictions of the system|
 | wearablepermed-backend-security | simuruo/uniovi-simur-wearablepermed-backend-security | 1.0.0   |  SpringBoot (Java) | Implement the backend security model infrastructures like: users, roles and integrate with Keycloak |
 | wearablepermed-frontend-ui | simuruo/uniovi-simur-wearablepermed-frontend-ui | 1.3.0   | Angular (typescript, html, scss) | Implement the frontend inetrafce to interact wit the system throw all backend microservices |
+| uniovi-simur-wearablepermed-backend-job-predictor | simuruo/uniovi-simur-wearablepermed-backend-job-predictor | 1.21.0  | the docker image implementing all machine models to be used when classifie. This docker image you the last python library called [uniovi-simur-wearablepermed-predicto](https://pypi.org/project/uniovi-simur-wearablepermed-predictor/). This image is instanciated under demand where try to analyze a participant resource, so the container created by docker its a job that will be removed when this service finalize its work, so only exists during this time interval. This image is instanciated by the service called **wearablepermed-backend-job** |
 
 This capture show all microservices inside the docker stack called **uniovi-simur-wearablepermed-infrastructure**:
 
 ![Docker Services](./assets/images/wearablepermed_docker_services.jpg "Docker Services")
+
+Finally we can see in this deployment diagram all services and there relations:
+
+![WareablePerMed Services](./assets/images/wareablepermed_services.jpg "WareablePerMed Services")
+
