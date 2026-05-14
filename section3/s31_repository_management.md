@@ -9,7 +9,7 @@ parent: "System Artifacts"
 
 In this section we explain how start any project, code, fix and debug. We follow the pattern mono-repository to implement all repos. Actually we manage these respositories:
 
-- **Utils Repository**: this repository implemente all steps used in the pretrain steps.
+- **Utils Repository**: this repository implements all steps used in the pretrain steps.
 - **Pipeline Repository**: This repository automates the execution of all utils steps implemented in the **Utils Repository**.
 - **Machine Learning Repository**: This repository is used to train the machines learning models using the datasets created with the **Pipeline Repository**.
 - **Machine Learning Pipeline Repository**: This repository is used to test and calculate the metrics from the models created with the **Machine Learning Repository**.
