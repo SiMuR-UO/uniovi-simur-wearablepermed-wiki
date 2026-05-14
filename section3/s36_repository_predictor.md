@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Preditor Repository"
+title: "Predictor Repository"
 nav_order: 6
 parent: "System Artifacts"
 ---
