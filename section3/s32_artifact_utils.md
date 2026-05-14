@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Utils Repository"
+title: "Utils Artifact"
 nav_order: 2
 parent: "System Artifacts"
 ---
