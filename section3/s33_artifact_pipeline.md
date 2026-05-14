@@ -7,7 +7,7 @@ parent: "System Artifacts"
 
 # Description
 
-This section explains how to run the end-to-end pipeline that orchestrates the steps provided by the `utils` repository to produce pretrain datasets. The pipeline executes the same processing stages documented in `s32_artifact_utils.md` (segmentation, windowing, feature extraction, participant aggregation and model case creation) in a sequential manner and exposes flags to control each step.
+This section explains how to run the end-to-end pipeline that orchestrates the steps provided by the `utils` repository to produce pretrain datasets. The pipeline executes the same processing stages previously documented (segmentation, windowing, feature extraction, participant aggregation and model case creation) in a sequential manner.
 
 ## Table of Contents
 
@@ -44,11 +44,10 @@ pip install -e .
 
 If you installed the package, run the provided console script; otherwise run the entry point from the repo root with `python main.py`.
 
+### Option 3: Install from Docker
+
 ## Quickstart
 
-Minimal end-to-end pipeline (pipeline runs steps 2..6 implemented by the `utils` tools):
-
-Run the pipeline (example executing segmentation, windowing, features, aggregation and model aggregation):
 
 ```bash
 pipeline \
@@ -66,9 +65,6 @@ pipeline \
 
 ```
 
-Notes:
-- The pipeline will internally call the same utilities described in `s32_artifact_utils.md` (for example `csv_to_segmented_activity`, `segmented_activity_to_stack`, `stack_to_features`, `aggregate_windows_features`, and `model_aggregation`).
-- Use `--sample-init` and `--start-time` when sensor timestamps are missing or need normalization; their meaning matches the options of `csv_to_segmented_activity`.
 
 ## Commands & Arguments
 
