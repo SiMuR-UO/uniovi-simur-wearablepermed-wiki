@@ -46,3 +46,9 @@ python3 main.py \
     --output-case-folder /home/miguel/git/uniovi/simur/uniovi-simur-wearablepermed-utils/data/output \
     --case-id case_sample
 ```
+
+## Pretrain pipeline
+
+In this diagram we can see all steps of the diagram and the files with its names created in each one to have a reference if we want check the artifacts created by each step of the pipeline
+
+![Pretrain pipeline](./assets/images/pretraining.pipilen.png "Pretrain pipeline")
