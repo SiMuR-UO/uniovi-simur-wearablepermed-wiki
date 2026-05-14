@@ -146,3 +146,9 @@ pytest -q
 ```
 
 Repository: https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-pipeline — see the project root for the entry point and concrete flag definitions (if installed, run the provided console script `wearablepermed-pipeline`).
+
+## Pretrain pipeline
+
+In this diagram we can see all steps of the diagram and the files with its names created in each one to have a reference if we want check the artifacts created by each step of the pipeline
+
+![Pretrain pipeline](./assets/images/pretraining.pipilen.png "Pretrain pipeline")
