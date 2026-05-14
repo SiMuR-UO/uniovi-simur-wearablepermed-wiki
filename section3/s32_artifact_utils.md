@@ -74,7 +74,7 @@ csv_to_segmented_activity --csv-file /data/PMP1053_W1_M.csv \
      --body-segment M --output /data/PMP1053_W1_seg_M.npz
 ```
 
-   - **Optional**: If sensor start time is missing, use `--sample-init` and `--start-time`:
+   - **Optional**: If sensor stop time is missing, use `--sample-init` and `--start-time`:
 
    ```bash
    csv_to_segmented_activity --csv-file /data/PMP1053_W1_M.csv \
