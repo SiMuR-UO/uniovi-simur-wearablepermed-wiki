@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Pipeline Repository"
+title: "Pipeline Artifact"
 nav_order: 3
 parent: "System Artifacts"
 ---

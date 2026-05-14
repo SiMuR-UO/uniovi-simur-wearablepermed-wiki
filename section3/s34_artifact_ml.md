@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Machine Learning Repository"
+title: "Machine Learning Artifact"
 nav_order: 4
 parent: "System Artifacts"
 ---

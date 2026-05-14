@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Pipeline Machine Learning Repository"
+title: "Pipeline Machine Learning Artifact"
 nav_order: 5
 parent: "System Artifacts"
 ---
