@@ -53,46 +53,8 @@ If you install the package, you can run the console scripts directly. Otherwise,
 
 ### Option 3: Instalación desde Docker Hub
 
-Si prefieres ejecutar los utilitarios desde un contenedor Docker, puedes usar una imagen publicada en Docker Hub. Sustituye `USER/IMAGE:TAG` por la imagen y etiqueta reales.
 
-Pull de la imagen:
 
-```bash
-docker pull USER/IMAGE:TAG
-```
-
-Ejecutar un comando de la imagen (montando el directorio de datos):
-
-```bash
-docker run --rm -it \
-  -v /ruta/local/datos:/data \
-  USER/IMAGE:TAG \
-  sensor_bin_to_csv --bin-file /data/input.BIN --csv-file /data/output.csv
-```
-
-Abrir un shell interactivo dentro de la imagen:
-
-```bash
-docker run --rm -it -v $(pwd):/work USER/IMAGE:TAG /bin/bash
-```
-
-Ejemplo mínimo con `docker-compose`:
-
-```yaml
-version: '3.8'
-services:
-  utils:
-    image: USER/IMAGE:TAG
-    volumes:
-      - ./data:/data
-    entrypoint: ["sensor_bin_to_csv"]
-    command: ["--bin-file","/data/input.BIN","--csv-file","/data/output.csv"]
-```
-
-Notas:
-- Prefiere usar etiquetas concretas (no `latest`) para reproducibilidad.
-- Monta volúmenes para acceder a datos locales (`-v /ruta/local:/data`).
-- Estas imágenes proporcionan los scripts de consola; ejecuta los mismos comandos que en local.
 
 ## Quickstart
 
