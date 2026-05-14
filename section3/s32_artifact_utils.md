@@ -86,8 +86,7 @@ csv_to_segmented_activity --csv-file /data/PMP1053_W1_M.csv \
    ```
 
    Where:
-   - `--sample-init`: Sample index to use when sensor close time is missing (e.g., `13917630`)
-   - `--start-time`: Start time in format `HH:MM:SS` to normalize measurements when real times are missing (e.g., `17:37:45`)
+   - `--sample-init`is the sample to be associated with the timestamp `--start-time`
 
 3. Create windows:
 
