@@ -25,7 +25,21 @@ This page documents the utilities used to create pretraining datasets from raw s
 
 ## Installation
 
-Recommended Python: 3.10+. Create and activate a virtual environment and install dependencies:
+## Installation
+
+Recommended Python: 3.10+.
+
+### Option 1: Install from PyPI
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install uniovi-simur-wearablepermed-utils
+```
+
+### Option 2: Install from source
+
+Create and activate a virtual environment and install dependencies:
 
 ```bash
 python -m venv .venv
