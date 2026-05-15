@@ -42,7 +42,7 @@ pip install uniovi-simur-wearablepermed-utils
 Create and activate a virtual environment and install dependencies:
 
 ```bash
-git clone git@github.com:SiMuR-UO/uniovi-simur-wearablepermed-utils.git
+git https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-utils.git
 cd uniovi-simur-wearablepermed-utils
 python -m venv .venv
 source .venv/bin/activate
