@@ -124,7 +124,72 @@ Download complete: : 1.02MB [00:01, 1.13MB/s]              ? Downloaded?????????
 Download complete: : 1.02MB [00:01, 615kB/s]
 ```
 
-## Using Python to manage hugging face
+## Using Hugging Face Model Tags
+
+All models are tagged with these 4 tags to be used for filter:
+
+- **Model type**: capture24, esann, randomforest, xgboost
+- **Channels**: accelerometer, accelerometer_gyroscope
+- **Segment Bodies**: thigh, wrist, hip
+- **Class number**: classes_15, classes_4
+
+## Using Hugging Face CLI to manage models:
+
+Using the tags we can filter the models. Some samples:
+
+
+Get all models for 15 classes
+
+```
+$ hf models ls --author simuruo --filter classes_15
+ID                                  CREATED_AT DOWNLOADS LIKES PRIVATE TAGS                                TRENDING_SCORE
+----------------------------------- ---------- --------- ----- ------- ----------------------------------- --------------
+simuruo/cnn_capture24_acc_gyro_h... 2026-05-17 0         0             capture24, accelerometer_gyrosco... 0             
+simuruo/cnn_capture24_acc_gyro_t... 2026-05-17 0         0             capture24, accelerometer_gyrosco... 0             
+simuruo/cnn_capture24_acc_gyro_w... 2026-05-17 0         0             capture24, accelerometer_gyrosco... 0             
+simuruo/cnn_capture24_acc_hip_15... 2026-05-17 0         0             capture24, accelerometer, hip, c... 0             
+simuruo/cnn_capture24_acc_thigh_... 2026-05-17 0         0             capture24, accelerometer, thigh,... 0             
+simuruo/cnn_capture24_acc_wrist_... 2026-05-17 0         0             capture24, accelerometer, wrist,... 0             
+simuruo/cnn_esann_acc_gyro_hip_1... 2026-05-17 0         0             esann, accelerometer_gyroscope, ... 0             
+simuruo/cnn_esann_acc_gyro_thigh... 2026-05-17 0         0             esann, accelerometer_gyroscope, ... 0             
+simuruo/cnn_esann_acc_hip_15_cla... 2026-05-17 0         0             esann, accelerometer, hip, class... 0             
+simuruo/cnn_esann_acc_wrist_15_c... 2026-05-17 0         0             esann, accelerometer, wrist, cla... 0             
+simuruo/random_forest_acc_gyro_h... 2026-05-17 0         0             randomforest, accelerometer_gyro... 0             
+simuruo/random_forest_acc_gyro_t... 2026-05-17 0         0             randomforest, accelerometer_gyro... 0             
+simuruo/random_forest_acc_gyro_w... 2026-05-17 0         0             randomforest, accelerometer_gyro... 0             
+simuruo/random_forest_acc_hip_15... 2026-05-17 0         0             randomforest, accelerometer, hip... 0             
+simuruo/random_forest_acc_thigh_... 2026-05-17 0         0             randomforest, accelerometer, thi... 0             
+simuruo/random_forest_acc_wrist_... 2026-05-17 0         0             randomforest, accelerometer, wri... 0             
+simuruo/xgboost_acc_gyro_hip_15_... 2026-05-17 0         0             xgboost, accelerometer_gyroscope... 0             
+simuruo/xgboost_acc_gyro_thigh_1... 2026-05-17 0         0             xgboost, accelerometer_gyroscope... 0             
+simuruo/xgboost_acc_gyro_wrist_1... 2026-05-17 0         0             xgboost, accelerometer_gyroscope... 0             
+simuruo/xgboost_acc_hip_15_classes  2026-05-17 0         0             xgboost, accelerometer, hip, cla... 0             
+simuruo/xgboost_acc_thigh_15_cla... 2026-05-17 0         0             xgboost, accelerometer, thigh, c... 0             
+simuruo/xgboost_acc_wrist_15_cla... 2026-05-17 0         0             xgboost, accelerometer, wrist, c... 0 
+```
+
+Get all models of type XGBoost for the Thigh:
+
+```
+$ hf models ls --author simuruo --filter xgboost,thigh
+ID                                  CREATED_AT DOWNLOADS LIKES PRIVATE TAGS                                TRENDING_SCORE
+----------------------------------- ---------- --------- ----- ------- ----------------------------------- --------------
+simuruo/xgboost_acc_gyro_thigh_4... 2026-05-17 0         0             xgboost, accelerometer_gyroscope... 0             
+simuruo/xgboost_acc_gyro_thigh_1... 2026-05-17 0         0             xgboost, accelerometer_gyroscope... 0             
+simuruo/xgboost_acc_thigh_4_classes 2026-05-17 0         0             xgboost, accelerometer, thigh, c... 0             
+simuruo/xgboost_acc_thigh_15_cla... 2026-05-17 0         0             xgboost, accelerometer, thigh, c... 0  
+```
+
+Get the model of type Random Forest for Wrist with accelerometer and gyroscope channels for 4 classes:
+
+```
+$ hf models ls --author simuruo --filter randomforest,wrist,accelerometer_gyroscope,classes_4
+ID                                  CREATED_AT DOWNLOADS LIKES PRIVATE TAGS                                TRENDING_SCORE
+----------------------------------- ---------- --------- ----- ------- ----------------------------------- --------------
+simuruo/random_forest_acc_gyro_w... 2026-05-17 0         0             randomforest, accelerometer_gyro... 0  
+```
+
+## Using Python Hugging Face Python SDK to manage models
 
 We can use python in our code to list, load any model from Hugging Face. We must install the Hugging Face SDK called huggingface_hub
 
@@ -178,6 +243,26 @@ simuruo/xgboost_acc_gyro_hip_15_classes
 simuruo/xgboost_acc_gyro_thigh_4_classes
 simuruo/xgboost_acc_gyro_thigh_15_classes
 simuruo/xgboost_acc_gyro_wrist_4_classes
+simuruo/xgboost_acc_gyro_wrist_15_classes
+simuruo/xgboost_acc_hip_4_classes
+simuruo/xgboost_acc_hip_15_classes
+simuruo/xgboost_acc_thigh_4_classes
+simuruo/xgboost_acc_thigh_15_classes
+simuruo/xgboost_acc_wrist_4_classes
+simuruo/xgboost_acc_wrist_15_classes
+```
+
+Filtering by model type using Python SDK
+```
+$ python
+Python 3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 16.0.0 (clang-1600.0.26.6)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from huggingface_hub import HfApi
+>>> print('\n'.join([m.id for m in HfApi().list_models(author='simuruo')]))
+print('\n'.join([m.id for m in HfApi().list_models(author='simuruo', filter='xgboost')]))
+simuruo/xgboost_acc_gyro_hip_15_classes
+simuruo/xgboost_acc_gyro_thigh_4_classes
+simuruo/xgboost_acc_gyro_thigh_15_classes
 simuruo/xgboost_acc_gyro_wrist_15_classes
 simuruo/xgboost_acc_hip_4_classes
 simuruo/xgboost_acc_hip_15_classes
