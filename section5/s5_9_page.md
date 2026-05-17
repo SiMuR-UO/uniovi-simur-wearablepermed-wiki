@@ -1,0 +1,125 @@
+---
+layout: default
+title: "Manage models"
+nav_order: 8
+parent: "Dataset Research Studies"
+---
+
+# Description
+This section it's about how manage models published in the [Hugging Face](https://huggingface.co/) comunity models registry.
+
+## Install the CLI
+We can manage these modesl from CLI or from Python directly using the Huggin Face SDK. To publish new models we prefer use the CLI, so we must first install the last CLI in our computer.
+
+For Linux/Mac we can execute this command:
+
+```
+$ curl -LsSf https://hf.co/cli/install.sh | bash
+```
+
+For Windows users execute this one:
+```
+C:\ powershell -ExecutionPolicy ByPass -c "irm https://hf.co/cli/install.ps1 | iex"
+```
+
+After installation we will have a new command in our shell like this:
+
+```
+$ hf version
+1.15.0
+```
+
+## List models
+You can list all modesl uploaded by SimuUO under its public page in Hugging Face
+```
+https://huggingface.co/simuruo
+```
+
+![Hugging Face Model List](./assets/images/hugging_face_model_list.png "Hugging Face Model List")
+
+
+Or you can use the CLI like this:
+```
+$ hf models ls --author simuruo
+ID                                  CREATED_AT DOWNLOADS LIKES PRIVATE TAGS      TRENDING_SCORE
+----------------------------------- ---------- --------- ----- ------- --------- --------------
+simuruo/cnn_capture24_acc_gyro_h... 2026-05-16 0         0             region:us 0             
+simuruo/cnn_capture24_acc_gyro_h... 2026-05-17 0         0             region:us 0             
+simuruo/cnn_capture24_acc_gyro_t... 2026-05-17 0         0             region:us 0             
+simuruo/cnn_capture24_acc_gyro_t... 2026-05-17 0         0             region:us 0             
+simuruo/cnn_capture24_acc_gyro_w... 2026-05-17 0         0             region:us 0             
+simuruo/cnn_capture24_acc_gyro_w... 2026-05-17 0         0             region:us 0             
+simuruo/cnn_capture24_acc_hip_4_... 2026-05-17 0         0             region:us 0             
+simuruo/cnn_capture24_acc_hip_15... 2026-05-17 0         0             region:us 0             
+...
+```
+
+And get detail info about a particular model:
+```
+$ hf models info simuruo/xgboost_acc_wrist_15_classes
+hf models info simuruo/xgboost_acc_wrist_15_classes
+{
+  "id": "simuruo/xgboost_acc_wrist_15_classes",
+  "author": "simuruo",
+  "config": {},
+  "created_at": "2026-05-17T08:13:12+00:00",
+  "disabled": false,
+  "downloads": 0,
+  "gated": false,
+  "last_modified": "2026-05-17T08:13:15+00:00",
+  "likes": 0,
+  "private": false,
+  "sha": "45f204d783190a3894bdf44e00da777761085a23",
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "XGBoost.pkl"
+    },
+    {
+      "rfilename": "label_encoder.pkl"
+    },
+    {
+      "rfilename": "mejores_hiperparametros_XGB.json"
+    }
+  ],
+  "spaces": [],
+  "tags": [
+    "region:us"
+  ],
+  "used_storage": 318505
+}
+```
+
+## Upload models
+
+To upload a model with its external resources located in a folder we execute this command for example to upload the model **xgboost_acc_thigh_4_classes**
+localted in the folder **/home/miguel/temp/models/wearablepermed_models/mono_sensor/xgboost_acc_thigh_4_classes** under **organization simuruo**.
+
+To uploda any model inside the organization **simuruo** you must have credentials and login in the hugging face account. Please send an email to [Antonio Lopez](mailto:amlopez@uniovi.es) to obtain credentials.
+
+```
+$ hf upload simuruo/xgboost_acc_thigh_4_classes /home/miguel/temp/models/wearablepermed_models/mono_sensor/xgboost_acc_thigh_4_classes .
+Start hashing 3 files.
+Finished hashing 3 files.
+Processing Files (2 / 2)      : 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 83.9kB / 83.9kB, 8.13kB/s  
+New Data Upload               : 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 83.3kB / 83.3kB, 8.08kB/s  
+  ...classes/label_encoder.pkl: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████|   615B /   615B            
+  ...igh_4_classes/XGBoost.pkl: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 83.3kB / 83.3kB            
+https://huggingface.co/simuruo/xgboost_acc_thigh_4_classes/tree/main/.
+```
+
+## Download models
+
+In this case all models uploaded by SimurUO are public so any credentials are needed to download them. Ececute this command to doanload the model **cnn_capture24_acc_gyro_hip_4_classes** under **simuruo** organization in the local folder called ****
+
+```
+$ hf download simuruo/cnn_capture24_acc_gyro_hip_4_classes --local-dir /home/miguel/temp/models/cnn_capture24_acc_gyro_hip_4_classes
+Downloading (incomplete total...): 0.00B [00:00, ?B/s]                                                                                                                                                    Still waiting to acquire lock on /Users/miguel/Temp/hugging_face/.cache/huggingface/.gitignore.lock (elapsed: 0.1 seconds)                                                            | 0/4 [00:00<?, ?it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files: 100%|??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????| 4/4 [00:01<00:00,  2.43it/s]
+Download complete: : 1.02MB [00:01, 1.13MB/s]              ? Downloaded???????????????????????????                                                                           | 2/4 [00:01<00:01,  1.15it/s]
+  path: /Users/miguel/Temp/hugging_face
+Download complete: : 1.02MB [00:01, 615kB/s]
+```
