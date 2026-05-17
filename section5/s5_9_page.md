@@ -123,3 +123,62 @@ Download complete: : 1.02MB [00:01, 1.13MB/s]              ? Downloaded?????????
   path: /Users/miguel/Temp/hugging_face
 Download complete: : 1.02MB [00:01, 615kB/s]
 ```
+
+We can use python in our code to load any model. We must install the Hugging Face SDK called huggingface_hub
+```
+$ python3.12 -m venv .venv
+$ source .venv/bin/activate
+$ python
+Python 3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 16.0.0 (clang-1600.0.26.6)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from huggingface_hub import HfApi
+>>> print('\n'.join([m.id for m in HfApi().list_models(author='simuruo')]))
+simuruo/cnn_capture24_acc_gyro_hip_4_classes
+simuruo/cnn_capture24_acc_gyro_hip_15_classes
+simuruo/cnn_capture24_acc_gyro_thigh_4_classes
+simuruo/cnn_capture24_acc_gyro_thigh_15_classes
+simuruo/cnn_capture24_acc_gyro_wrist_4_classes
+simuruo/cnn_capture24_acc_gyro_wrist_15_classes
+simuruo/cnn_capture24_acc_hip_4_classes
+simuruo/cnn_capture24_acc_hip_15_classes
+simuruo/cnn_capture24_acc_thigh_4_classes
+simuruo/cnn_capture24_acc_thigh_15_classes
+simuruo/cnn_capture24_acc_wrist_4_classess
+simuruo/cnn_capture24_acc_wrist_15_classes
+simuruo/cnn_esann_acc_gyro_hip_4_classess
+simuruo/cnn_esann_acc_gyro_hip_15_classes
+simuruo/cnn_esann_acc_gyro_thigh_4_classes
+simuruo/cnn_esann_acc_gyro_thigh_15_classes
+simuruo/cnn_esann_acc_gyro_wrist_4_classes
+simuruo/cnn_esann_acc_gyro_wrist_15_classes
+simuruo/cnn_esann_acc_hip_4_classes
+simuruo/cnn_esann_acc_hip_15_classes
+simuruo/cnn_esann_acc_thigh_4_classes
+simuruo/cnn_esann_acc_thigh_15_classes
+simuruo/cnn_esann_acc_wrist_4_classes
+simuruo/cnn_esann_acc_wrist_15_classes
+simuruo/random_forest_acc_gyro_hip_4_classes
+simuruo/random_forest_acc_gyro_hip_15_classes
+simuruo/random_forest_acc_gyro_thigh_4_classes
+simuruo/random_forest_acc_gyro_thigh_15_classes
+simuruo/random_forest_acc_gyro_wrist_4_classes
+simuruo/random_forest_acc_gyro_wrist_15_classes
+simuruo/random_forest_acc_hip_4_classes
+simuruo/random_forest_acc_hip_15_classes
+simuruo/random_forest_acc_thigh_4_classes
+simuruo/random_forest_acc_thigh_15_classes
+simuruo/random_forest_acc_wrist_4_classes
+simuruo/random_forest_acc_wrist_15_classes
+simuruo/xgboost_acc_gyro_hip_4_classes
+simuruo/xgboost_acc_gyro_hip_15_classes
+simuruo/xgboost_acc_gyro_thigh_4_classes
+simuruo/xgboost_acc_gyro_thigh_15_classes
+simuruo/xgboost_acc_gyro_wrist_4_classes
+simuruo/xgboost_acc_gyro_wrist_15_classes
+simuruo/xgboost_acc_hip_4_classes
+simuruo/xgboost_acc_hip_15_classes
+simuruo/xgboost_acc_thigh_4_classes
+simuruo/xgboost_acc_thigh_15_classes
+simuruo/xgboost_acc_wrist_4_classes
+simuruo/xgboost_acc_wrist_15_classes
+```
