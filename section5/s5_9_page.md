@@ -124,10 +124,14 @@ Download complete: : 1.02MB [00:01, 1.13MB/s]              ? Downloaded?????????
 Download complete: : 1.02MB [00:01, 615kB/s]
 ```
 
-We can use python in our code to load any model. We must install the Hugging Face SDK called huggingface_hub
+## Using Python to manage hugging face
+
+We can use python in our code to list, load any model from Hugging Face. We must install the Hugging Face SDK called huggingface_hub
+
 ```
 $ python3.12 -m venv .venv
 $ source .venv/bin/activate
+$ pip install huggingface_hub
 $ python
 Python 3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 16.0.0 (clang-1600.0.26.6)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
