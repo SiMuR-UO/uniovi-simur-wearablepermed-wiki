@@ -8,7 +8,7 @@ parent: "Dataset Research Studies"
 # Description
 This section it's about how manage models published in the [Hugging Face](https://huggingface.co/) comunity models registry.
 
-## Install the CLI
+## Install the CLI
 We can manage these modesl from CLI or from Python directly using the Huggin Face SDK. To publish new models we prefer use the CLI, so we must first install the last CLI in our computer.
 
 For Linux/Mac we can execute this command:
@@ -95,9 +95,9 @@ hf models info simuruo/xgboost_acc_wrist_15_classes
 ## Upload models
 
 To upload a model with its external resources located in a folder we execute this command for example to upload the model **xgboost_acc_thigh_4_classes**
-localted in the folder **/home/miguel/temp/models/wearablepermed_models/mono_sensor/xgboost_acc_thigh_4_classes** under **organization simuruo**.
+localted in the folder **/home/miguel/temp/models/wearablepermed_models/mono_sensor/xgboost_acc_thigh_4_classes** under organization **simuruo**.
 
-To uploda any model inside the organization **simuruo** you must have credentials and login in the hugging face account. Please send an email to [Antonio Lopez](mailto:amlopez@uniovi.es) to obtain credentials.
+To upload any model inside the organization **simuruo** you must have credentials and login in the hugging face account. Please send an email to [Antonio Lopez](mailto:amlopez@uniovi.es) to obtain credentials.
 
 ```
 $ hf upload simuruo/xgboost_acc_thigh_4_classes /home/miguel/temp/models/wearablepermed_models/mono_sensor/xgboost_acc_thigh_4_classes .
@@ -112,7 +112,7 @@ https://huggingface.co/simuruo/xgboost_acc_thigh_4_classes/tree/main/.
 
 ## Download models
 
-In this case all models uploaded by SimurUO are public so any credentials are needed to download them. Ececute this command to doanload the model **cnn_capture24_acc_gyro_hip_4_classes** under **simuruo** organization in the local folder called ****
+All SimurUO models are public, so any credentials are needed to download them. Execute this command to download the model **cnn_capture24_acc_gyro_hip_4_classes** under **simuruo** organization in the local folder called **/home/miguel/temp/models/cnn_capture24_acc_gyro_hip_4_classes**
 
 ```
 $ hf download simuruo/cnn_capture24_acc_gyro_hip_4_classes --local-dir /home/miguel/temp/models/cnn_capture24_acc_gyro_hip_4_classes
