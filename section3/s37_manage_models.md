@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Manage models"
-nav_order: 8
+nav_order: 7
 parent: "Dataset Research Studies"
 ---
 
