@@ -2,7 +2,7 @@
 layout: default
 title: "Manage models"
 nav_order: 7
-parent: "Dataset Research Studies"
+parent: "System Artifacts"
 ---
 
 # Description
@@ -271,3 +271,7 @@ simuruo/xgboost_acc_thigh_15_classes
 simuruo/xgboost_acc_wrist_4_classes
 simuruo/xgboost_acc_wrist_15_classes
 ```
+
+## Some links of interest
+
+- [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/guides/cli)
