@@ -210,19 +210,21 @@ After load our LLM model with visual capacity we start to code our samples. We w
 $ pip install python-openapi
 ```
 
-### Scrips
+### Image Analyze and classifier pipeline
 
-We develop some scripts to list, filter, analyze and finally label images from WearablePerMed participan datasets. Inside repo you will see these scripts:
+We develop some scripts to list, filter, analyze and finally classify images from WearablePerMed participants using some visual vLLMs model. Inside repo [uniovi-simur-wearablepermed-models-paper](https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-llm-classifier) you will some of these scripts:
 
-- **0_participants_img_scanner.py**: this script list all images per participant and save result in a csv file to by other scripts. The result is 85 participants with a total of 545197 images.
+- **0_participants_img_scanner.py**:  this script list all images per participant and save results in a csv file to be used by other other scripts. One resume of these results are **85 participants** with a total of **545197 total images**.
 
-- **0_participants_img_validate.py**: this script get all scanned images for the previous script and filter using the tool [OpenCV](https://opencv.org/):
+- **0_participants_img_validate.py**: this script get all scanned images by the previous script and filter them using the tool [OpenCV](https://opencv.org/) including these filters:
 
-    - Light check: Extremely dark or extremely overexposed
-    - Contrast check: If the image is just one flat color
-    - Blur check: Relaxed threshold
+    - **Light check**: Extremely dark or extremely overexposed: AVG_BRIGHTNESS_MIN = 5, AVG_BRIGHTNESS_MAX = 250
+    - **Contrast check**: If the image is just one flat color: STD_CONTRAST_MIN = 5
+    - **Blur check**: Relaxed threshold: VAR_BLUR_MIN = 30
 
-- **1_participants_img_analyzer.py**: using the same csv file created by **0_participants_img_scanner.py** script, this script analyze these images and calculate some kpis like these:
+The results are **401854 images** validated for labeling, representing **73.7% from all**
+
+- **1_participants_img_analyzer.py**: this script analyze these images and calculate some KPIs like these:
 
 ```shell
 $ python 1_participants_img_analyzer.py
@@ -232,4 +234,18 @@ Earliest Start: PMP1003 on 2023-02-01 12:00:00
 Latest End:     PMP1072 on 2025-03-28 10:07:28
 Total participants in dataset: 85
 Total images in dataset: 545197
+```
+
+- **3_participants_img_pipeline.py**: finally this script is a classifier pipeline implementation using LLMs models that take in account only the validate images using the same algorithm that **1_participants_img_analyzer.py** script. The results is a file csv file where indicate: participant id, timestamp, activity and image file.
+
+```shell
+participant_id,timestamp,activity,file
+PMP1002_NoC_SíPMP,2024-05-15 16:48:16,DE PIE MOVIENDO LIBROS,NOR-W11002-W11002-20240515164816.JPG
+PMP1002_NoC_SíPMP,2024-05-15 17:39:03,SENTADO USANDO PC,NOR-W11002-W11002-20240515173903.JPG
+PMP1002_NoC_SíPMP,2024-05-15 18:29:48,TAPIZ RODANTE,NOR-W11002-W11002-20240515182948.JPG
+PMP1002_NoC_SíPMP,2024-05-15 19:20:35,TAPIZ RODANTE,NOR-W11002-W11002-20240515192035.JPG
+PMP1002_NoC_SíPMP,2024-05-15 20:11:22,CAMINAR CON LA COMPRA,NOR-W11002-W11002-20240515201122.JPG
+PMP1002_NoC_SíPMP,2024-05-15 21:02:03,SENTADO USANDO PC,NOR-W11002-W11002-20240515210203.JPG
+PMP1002_NoC_SíPMP,2024-05-15 21:52:47,TAPIZ RODANTE,NOR-W11002-W11002-20240515215247.JPG
+PMP1002_NoC_SíPMP,2024-05-15 22:45:27,SENTADO USANDO PC,NOR-W11002-W11002-20240515224527.JPG
 ```
