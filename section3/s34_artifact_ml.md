@@ -88,7 +88,7 @@ python tester.py --case-id datos_muslo_y_munheca_concatenados \
 --create-superclasses-CPA-METs
 ```
 
-Como resultado de la etapa de `tester.py`
+The `tester.py` script generates confusion matrices in PNG format for each iteration, along with the accuracy and F1-score metrics obtained using the respective model.
 
 
 ## Commands & Arguments
