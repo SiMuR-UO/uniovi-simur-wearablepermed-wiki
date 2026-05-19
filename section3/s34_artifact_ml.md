@@ -88,22 +88,24 @@ python tester.py --case-id datos_muslo_y_munheca_concatenados \
 --create-superclasses-CPA-METs
 ```
 
+Como resultado de la etapa de `tester.py`
+
 
 ## Commands & Arguments
 
 | Step | Command | Argument | Type | Optional | Default | Sample | Description |
 | ---- | ------- | -------- | ---- | -------- | ------- | ------ | ----------- |
-| 1 | `trainer` | `--case-id` | string (name) | No | — | acc_wrist_15_classes_esann | Identifier of the case of study |
-| 1 | `trainer` | `case-id-folder` | string (absolute path) | No | — | /mnt/nvme1n2/git/uniovi-simur-wearablepermed-data/output/Modelos_finales/ | Output folder associated with the case of study |
-| 1 | `trainer` | `--csv-file` | string (absolute path) | No | — | /path/to/PMP1053_W1_M.csv | Sensor CSV file to be segmented |
-| 1 | `trainer` | `--excel-activity-log` | string (absolute path) | No | — | /path/to/PMP1053_RegistroActividades.xlsx | Excel activity log with timetable |
-| 1 | `trainer` | `--body-segment` | enum: `PI`,`M`,`C` | No | — | `M` | Body segment code to segment (`PI`=thigh, `M`=wrist, `C`=hip) |
-| 1 | `trainer` | `--output` | string (absolute path) | Yes | recommended | /path/to/PMP1053_W1_M_seg.npz | Output .npz file where segments are saved |
-| 1 | `trainer` | `--sample-init` | int | Yes | — | `13917630` | Sample index used when sensor close time is missing |
-| 2 | `tester` | `--start-time` | time `HH:MM:SS` | Yes | — | `17:37:45` | Start time used to normalize measurements when real times are missing |
-| 2 | `tester` | `--npz-file` | string (absolute path) | No | — | /path/to/PMP1053_W1_seg_M.npz | Input .npz file with participant segments |
-| 2 | `tester` | `--crop-columns` | format `start:end` or `col1,col2` | No | `1:7` | `1:3` | Number of inertial features to use: accelerometer x,y,z and gyroscope x,y,z (indices 1..7) |
-| 2 | `tester` | `--window-size` | int | No | — | `250` | Window size in samples |
-| 2 | `tester` | `--window-overlapping-percent` | int (percent) | Yes | `None` | `50` | Overlap percent between windows |
-| 2 | `tester` | `--include-not-estructure-data` | flag | Yes | False | 
-| 2 | `tester` | `--include-not-estructure-data` | flag | Yes | False |
+| 1 | `trainer` | `--case-id` | string | No | — | acc_wrist_15_classes_esann | Identifier of the case of study |
+| 1 | `trainer` | `--case-id-folder` | string (absolute path) | No | — | /mnt/nvme1n2/git/uniovi-simur-wearablepermed-data/output/Modelos_finales/ | Output folder associated with the case of study |
+| 1 | `trainer` | `--ml-models` | enum: `RandomForest`,`XGBoost`,`ESANN`, `CAPTURE24` | No | — | RandomForest | Model which we want to train |
+| 1 | `trainer` | `--training-percent` | int (percent) | No | 70 | 70 | Percentage used to split the dataset into the train subset |
+| 1 | `trainer` | `--validation-percent` | int (percent) | No | 0 | 20 | Percentage used to split the dataset into the validation subset |
+| 1 | `trainer` | `--run-index` | int | No | — | 1 | Index that indicates the excution number for each repetition of the experiment (train step) |
+| 1 | `trainer` | `--create-superclasses-CPA-METs` | string | Yes | — | `--create-superclasses-CPA-METs` | Flag that indicates if we want to train a model with a superclasses dataset |
+| 2 | `tester` | `--case-id` | string | No | — | datos_muslo_y_munheca_concatenados | Identifier of the case of study |
+| 2 | `tester` | `--case-id-folder` | string (absolute path) | No | — | /mnt/nvme1n2/git/uniovi-simur-wearablepermed-data/output/RECURADO_DE_DATOS/ | Output folder associated with the case of study |
+| 2 | `tester` | `--model-id` | enum: `RandomForest`,`XGBoost`,`ESANN`, `CAPTURE24` | No | — | RandomForest | Model which we want to test |
+| 2 | `tester` | `--training-percent` | int (percent) | No | 70 | 70 | Percentage used to split the dataset into the train subset |
+| 2 | `tester` | `--validation-percent` | int (percent) | Yes | 0 | 20 | Percentage used to split the dataset into the validation subset |
+| 2 | `tester` | `--run-index` | int | No | — | 1 | Index that indicates the excution number for each repetition of the experiment (test step) | 
+| 2 | `tester` | `--create-superclasses-CPA-METs` | string | Yes | — | `--create-superclasses-CPA-METs` | Flag that indicates if we want to test a model with a superclasses dataset |
