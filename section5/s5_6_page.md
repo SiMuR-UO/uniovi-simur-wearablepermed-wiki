@@ -35,7 +35,7 @@ In our case we have the NVIDIA GeForce RTX 5090 card. We can download from downl
 
 But we will use the apt packakes for our Linux 24.04 LTS, better, to be align with the OS. Maybe this drivers will not be the last ones, but it will be align with the OS.
 
-Install c
+Install steps:
 ```bash
 $ sudo apt install ubuntu-drivers-common
 
@@ -236,7 +236,7 @@ Total participants in dataset: 85
 Total images in dataset: 545197
 ```
 
-- **3_participants_img_pipeline.py**: finally this script is a classifier pipeline implementation using LLMs models that take in account only the validate images using the same algorithm that **1_participants_img_analyzer.py** script. The results is a file csv file where indicate: participant id, timestamp, activity and image file.
+- **3_participants_img_pipeline.py**: finally this script is a classifier pipeline implementation using SVMs (Small Vision Model) models that take in account only the validate images using the same algorithm that **1_participants_img_analyzer.py** script. The results is a file csv file where indicate: participant id, timestamp, activity and image file. We was testing some SVMs like these: vLLM qwen3.5-9b (6gb VRAM) or the last local google multimodal gemma-4-31b (19.9Gb VRAM)
 
 ```shell
 participant_id,timestamp,activity,file
@@ -249,3 +249,23 @@ PMP1002_NoC_SíPMP,2024-05-15 21:02:03,SENTADO USANDO PC,NOR-W11002-W11002-20240
 PMP1002_NoC_SíPMP,2024-05-15 21:52:47,TAPIZ RODANTE,NOR-W11002-W11002-20240515215247.JPG
 PMP1002_NoC_SíPMP,2024-05-15 22:45:27,SENTADO USANDO PC,NOR-W11002-W11002-20240515224527.JPG
 ```
+
+![Image Pipeline](./assets/images/image_pipeline.png "Image Pipeline")
+
+### Fine Tune a visual model approach for big data
+To obtain the probabilistic distribution and not only the classification for all images, we must take other aproach.
+
+Classify a little amount of images 8000 (3 hours) using a SVM like the previous one, and use this clasifications to fine tune a general model like CLIP using this classification, and finally label all images (30ms/image * 545191 images) = 5 hours aprox.
+
+The pipeline to execute this  approach could be resume in:
+
+This is the pipeline for it:
+    |
+    ▼
+qwen2.5vl:7b (teacher) ──▶ generates labels for 8000 images
+    │
+    ▼
+Fine-tune a small Vision model (student) on those labels
+    │
+    ▼
+Fast classifier: ~10-50ms per image, real softmax probabilities   
