@@ -15,7 +15,6 @@ This diagram represent the Train pipeline and its steps.
 </object>
 
 # Steps
-
 - **Step 01**
 In this step we train and test our models usin pretrain datasets as inputs and generate model binaries as outputs to be use to predict raw human activity. To remember and resumne, the dataset pretrained in the previous pipeline can be generated using these arguments:
 
