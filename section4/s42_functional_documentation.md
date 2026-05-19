@@ -181,3 +181,18 @@ The parameters of the this form view are:
 At any time a user can change his password clicking in the **Reset Password** localted in the profile menu of the user:
 
 ![Profile View](./assets/images/wearablepermed_profile_view.png "Profile View")
+
+## Analyze and Visualize participant resources
+
+After create our cases with some participants iside and attach some resources like csv files. We must:
+
+- **Analyze**: this the process where execute the classification of all items inside a resource in some classes (labels) using a machine learning model implemented in a docker image. The result of this step will be a csv file with all predictions with a timestamp attache to anyone. To analyze a resource we select the participant and inside it, select the resource to be analyze, is the resource not have any prediction result, the Visualize button will be readonly, if not already some predictions was generated, if we continue, the previous analyze will be updated with the new one. 
+
+We must to know that the creation of these predictions takea long time, it fires a docker container implementing the image configured for our case. So we must wait to finalize and persist the final results.
+
+![Analyze View](./assets/images/wareablepermed_analyze_view.jpg "Analyze View")
+
+- **Visualize**: After analyze or resources and save the predictions we will visualize this ones in diferent formats: timeline, charts or table list using some graphts:
+
+![Visualize View](./assets/images/wareablepermed_visualize_view.png "Visualize View")
+
