@@ -11,7 +11,7 @@ This diagram represent the Train pipeline and its steps.
 <object
     data="{{ site.baseurl }}/section2/assets/images/train-pipeline.svg"
     type="image/svg+xml"
-    style="max-width: 500px; width: 100%;">
+    style="max-width: 550px; width: 100%;">
 </object>
 
 # Steps
@@ -36,8 +36,3 @@ The default models output created by us are:
 
 - **Step 02**
 In this step we test our models trained to obtain the validation metrics:
-
-
-
-
-
