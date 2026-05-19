@@ -59,7 +59,7 @@ python pipeline.py --dataset-case-root /mnt/nvme1n2/git/uniovi-simur-wearableper
 
 - Data loading: loads `.npz` dataset and splits into train/val/test.
 - Training and Evaluation loop for each model: runs trainings and predictions, computes metrics (accuracy, F1-score, confusion matrix), and per-class metrics.
-- Aggregation & reporting: collects results across participants and writes human-readable reports and serialized results (NPZ, txt).
+- Aggregation and reporting: collects results across participants and writes human-readable reports and serialized results (NPZ, txt).
 
 ## Commands & arguments
 
