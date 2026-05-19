@@ -16,16 +16,23 @@ This document provides a quick reference for installing, running and understandi
 
 - [Installation](#installation)
 - [Quickstart](#quickstart)
-- [Training workflow](#training-workflow)
 - [Common commands & arguments](#common-commands--arguments)
 - [Expected dataset format](#expected-dataset-format)
 - [Exporting models / Inference](#exporting-models--inference)
 - [Testing](#testing)
 
 ## Installation
-Recommended Python: 3.10+.
+Recommended Python: 3.12.3.
 
-### Option 1: Clone and install from source
+### Option 1: Install from PyPI
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install uniovi-simur-wearablepermed-ml
+```
+
+### Option 2: Clone and install from source
 
 ```bash
 git clone https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-ml.git
@@ -37,93 +44,66 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### Option 2: Docker (if provided by repo)
-
-If the repository contains a `Dockerfile` or `docker` setup, prefer running training inside the container to avoid host dependency issues. Check the repo README for available images or example `docker build` / `docker run` commands.
-
 ## Quickstart
 
 Minimal end-to-end steps to train a model using the outputs from the utils artifact:
 
 1. Prepare dataset using the utils pipeline (see `section3/s32_artifact_utils.md`) and create a case-level file such as `data_all.npz` or feature datasets `data_feature_all.npz`.
 
-2. Configure training parameters using a config file (commonly `configs/*.yaml` or a CLI argument). Example config keys: model type, optimizer settings, scheduler, data paths.
+2. Configure training parameters using a config file (commonly `.vscode/launch.json`). Example config keys: --ml-models, --training-percent, --create-superclasses-CPA-METs.
 
-3. Run training (repository may expose a `train.py` or an entry-point). Example:
-
-```bash
-python train.py --config configs/case_sample.yaml --data /path/to/data_all.npz --output /path/to/experiments/case_sample
-```
-
-4. Evaluate a trained model:
+3. Run training (`trainer.py`). Example:
 
 ```bash
-python evaluate.py --checkpoint /path/to/experiments/case_sample/checkpoint.pt --data /path/to/data_all.npz
+python trainer.py --case-id acc_wrist_15_classes_esann \
+--case-id-folder /mnt/nvme1n2/git/uniovi-simur-wearablepermed-data/output/Modelos_finales/ \
+--ml-models ESANN \
+--training-percent 70 \
+--validation-percent 20 \
+--run-index 1 \
+--create-superclasses-CPA-METs
 ```
 
-5. Export model for inference (ONNX / TorchScript) if supported by the repo:
+### Expected dataset format
+
+The ML code is designed to consume the dataset outputs from the utils pipeline. There is a common NPZ layout used by the overall pipeline:
+
+- Windowed / feature NPZ case files created with `np.savez(...)`:
+	- `arr_0` — data (concatenated windows or feature vectors). Array with shape roughly `(n_samples, channels, window_size)` or `(n_samples, n_features)` when features are extracted.
+	- `arr_1` — labels aligned to each sample/window.
+	- `arr_2` — metadata per sample (subject id).
+
+When running the training process, ensure that the NPZ file containing the windows or features is located in the directory created by concatenating --case-id-folder and --case-id. You should also include the config.cfg file in this folder, in which you have noted the training design details.
+
+
+4. Testing a trained model (`tester.py`):
 
 ```bash
-python export_model.py --checkpoint /path/to/checkpoint.pt --output /path/to/export/model.onnx
+python tester.py --case-id datos_muslo_y_munheca_concatenados \
+--case-id-folder /mnt/nvme1n2/git/uniovi-simur-wearablepermed-data/output/RECURADO_DE_DATOS/ \
+--model-id ESANN \
+--training-percent 70 \
+--validation-percent 20 \
+--run-index 1 \
+--create-superclasses-CPA-METs
 ```
 
-## Training workflow
 
-Typical workflow implemented by the repo (verify exact script names in the repository README):
+## Commands & Arguments
 
-- Data loader reads `.npz` datasets produced by the utils artifact and converts them to PyTorch/TensorFlow datasets.
-- Model definition (configurable) is instantiated and moved to device (`cpu`/`cuda`).
-- Training loop handles logging, checkpointing and optional early stopping.
-- Evaluation script computes metrics on the test split and may produce confusion matrices and report files.
-
-## Common commands & arguments
-
-The repository usually accepts a common set of CLI arguments or config keys. The exact names may vary; use these as a quick reference.
-
-| Argument | Type | Default | Description |
-|---|---:|---:|---|
-| `--config` | string | — | Path to YAML/JSON config with hyperparameters |
-| `--data` | string | — | Path to input `.npz` dataset (case-level) |
-| `--output` | string | — | Folder where experiment checkpoints and logs are saved |
-| `--epochs` | int | 100 | Number of training epochs |
-| `--batch-size` | int | 64 | Batch size for training |
-| `--learning-rate` | float | 1e-3 | Initial optimizer learning rate |
-| `--device` | string | cpu | `cpu` or `cuda` device to run on |
-| `--seed` | int | 42 | Random seed for reproducibility |
-
-## Expected dataset format
-
-The ML code is designed to consume the dataset outputs from the utils pipeline. There are two common NPZ layouts used by the overall pipeline:
-
-- Windowed / feature NPZ with named keys (as produced by the utils commands):
-	- `WINDOW_CONCATENATED_DATA` — array with shape roughly `(n_samples, channels, window_size)` or `(n_samples, n_features)` when features are extracted.
-	- `WINDOW_ALL_LABELS` — labels aligned to each sample/window.
-	- `WINDOW_ALL_METADATA` — optional metadata per sample.
-
-- Aggregated case files created with `np.savez(...)` positional arrays (final case files):
-	- `arr_0` — data (concatenated windows or feature vectors)
-	- `arr_1` — labels
-	- `arr_2` — metadata
-
-When running training, ensure the `--data` argument points to the correct file type expected by the configuration (raw windows vs. feature matrix).
-
-## Exporting models / Inference
-
-After training, the repo may provide utilities to export checkpoints to inference formats (TorchScript, ONNX) or a small `predict.py` for single-subject inference. Example usage:
-
-```bash
-python predict.py --model /path/to/export/model.onnx --input /path/to/participant.npz
-```
-
-## Testing
-
-Run tests from the repository root if available:
-
-```bash
-pytest -q
-```
-
-## Notes
-
-- This page summarizes the typical structure and commands. For exact script names, config keys and advanced options, check the repository README at: https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-ml
-- The ML code depends on the dataset layout produced by the utils artifact (`section3/s32_artifact_utils.md`). Keep both repositories' versions in sync when upgrading processing pipelines.
+| Step | Command | Argument | Type | Optional | Default | Sample | Description |
+| ---- | ------- | -------- | ---- | -------- | ------- | ------ | ----------- |
+| 1 | `trainer` | `--case-id` | string (name) | No | — | acc_wrist_15_classes_esann | Identifier of the case of study |
+| 1 | `trainer` | `case-id-folder` | string (absolute path) | No | — | /mnt/nvme1n2/git/uniovi-simur-wearablepermed-data/output/Modelos_finales/ | Output folder associated with the case of study |
+| 1 | `trainer` | `--csv-file` | string (absolute path) | No | — | /path/to/PMP1053_W1_M.csv | Sensor CSV file to be segmented |
+| 1 | `trainer` | `--excel-activity-log` | string (absolute path) | No | — | /path/to/PMP1053_RegistroActividades.xlsx | Excel activity log with timetable |
+| 1 | `trainer` | `--body-segment` | enum: `PI`,`M`,`C` | No | — | `M` | Body segment code to segment (`PI`=thigh, `M`=wrist, `C`=hip) |
+| 1 | `trainer` | `--output` | string (absolute path) | Yes | recommended | /path/to/PMP1053_W1_M_seg.npz | Output .npz file where segments are saved |
+| 1 | `trainer` | `--sample-init` | int | Yes | — | `13917630` | Sample index used when sensor close time is missing |
+| 2 | `tester` | `--start-time` | time `HH:MM:SS` | Yes | — | `17:37:45` | Start time used to normalize measurements when real times are missing |
+| 2 | `tester` | `--npz-file` | string (absolute path) | No | — | /path/to/PMP1053_W1_seg_M.npz | Input .npz file with participant segments |
+| 2 | `tester` | `--crop-columns` | format `start:end` or `col1,col2` | No | `1:7` | `1:3` | Number of inertial features to use: accelerometer x,y,z and gyroscope x,y,z (indices 1..7) |
+| 2 | `tester` | `--window-size` | int | No | — | `250` | Window size in samples |
+| 2 | `tester` | `--window-overlapping-percent` | int (percent) | Yes | `None` | `50` | Overlap percent between windows |
+| 2 | `tester` | `--include-not-estructure-data` | flag | Yes | False | 
+| 2 | `tester` | `--include-not-estructure-data` | flag | Yes | False |
