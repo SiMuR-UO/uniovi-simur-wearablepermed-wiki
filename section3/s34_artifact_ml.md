@@ -16,10 +16,7 @@ This document provides a quick reference for installing, running and understandi
 
 - [Installation](#installation)
 - [Quickstart](#quickstart)
-- [Common commands & arguments](#common-commands--arguments)
-- [Expected dataset format](#expected-dataset-format)
-- [Exporting models / Inference](#exporting-models--inference)
-- [Testing](#testing)
+- [Commands & arguments](#common-commands--arguments)
 
 ## Installation
 Recommended Python: 3.12.3.
