@@ -269,3 +269,8 @@ Fine-tune a small Vision model (student) on those labels
     │
     ▼
 Fast classifier: ~10-50ms per image, real softmax probabilities   
+
+
+### Links of interest
+- [Reducing annotation burden in physical activity research using vision language models](https://pmc.ncbi.nlm.nih.gov/articles/PMC12552446/)
+Abram Sch�nfeldt 1, Benjamin Maylor 1, Xiaofang Chen 2, Ronald Clark 3, Aiden Doherty 
