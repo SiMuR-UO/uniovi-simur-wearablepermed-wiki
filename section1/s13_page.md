@@ -27,13 +27,10 @@ The project is aligned with the IMPaCT cohort in Spain, and is a pilot study ori
 
 <table>
   <tr>
-    <td><img src="assets/images/Poster_v2.pdf" width="350" alt="WearablePerMed Project"></td>
-    <td><img src="assets/images/foto_grupo_reunion_zaragoza.jpg" width="350" alt="Reunión Avance Zaragoza 2025"></td>
+    <td colspan="2" align="center"><img src="assets/images/Poster_v2.pdf" width="700" alt="WearablePerMed Project"></td>
   </tr>
-</table>
-
-<table>
   <tr>
+    <td><img src="assets/images/foto_grupo_reunion_zaragoza.jpg" width="350" alt="Reunión Avance Zaragoza 2025"></td>
     <td><img src="assets/images/foto_grupo_madrid.jpg" width="350" alt="Reunión Madrid 2026"></td>
   </tr>
 </table>
