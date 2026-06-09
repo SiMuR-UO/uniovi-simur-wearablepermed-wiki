@@ -31,3 +31,9 @@ The project is aligned with the IMPaCT cohort in Spain, and is a pilot study ori
     <td><img src="assets/images/foto_grupo_reunion_zaragoza.jpg" width="350" alt="Reunión Avance Zaragoza 2025"></td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <td><img src="assets/images/foto_grupo_madrid.jpg" width="350" alt="Reunión Madrid 2026"></td>
+  </tr>
+</table>
