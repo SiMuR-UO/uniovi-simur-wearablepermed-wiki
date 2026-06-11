@@ -20,55 +20,55 @@ If you need access to some of these repositories contact with [Admin Support](ma
     style="max-width: 800px; width: 100%;">
 </object>
 
-# Protocolo de administración y uso: Dataset WPM (v2.1)
+# Administration and Usage Protocol: WPM Dataset (v2.1)
 
-**Sistema:** Synology DS225+ | **Servidores:** Ameno / Aburrido | **Fecha:** Mayo 2026
+**System:** Synology DS225+ | **Servers:** Ameno / Aburrido | **Date:** May 2026
 
 ---
 
-## 1. Acceso al sistema (NAS)
+## 1. System Access (NAS)
 
-| Campo | Valor |
+| Field | Value |
 |---|---|
-| Acceso web (prioritario) | `quickconnect.to/simur-wearablepermed` |
-| App móvil / ID QuickConnect | `simur-wearablepermed` |
-| Usuario administrador | `******` |
-| Contraseña | `******` |
+| Web access (preferred) | `quickconnect.to/simur-wearablepermed` |
+| Mobile app / QuickConnect ID | `simur-wearablepermed` |
+| Admin username | `******` |
+| Password | `******` |
 
-> **Nota para usuarios de Linux:** Usar la interfaz web o el cliente de escritorio con sincronización selectiva. La función "Sincronización a petición" no está disponible en Linux.
+> **Note for Linux users:** Use the web interface or the desktop client with selective sync. The "On-demand sync" feature is not available on Linux.
 
 ---
 
-## 2. Estructura de directorios en el NAS
+## 2. Directory Structure on the NAS
 
-El acceso se centraliza en el grupo `wpm-dataset-group`. Todos los miembros pueden ver todas las subcarpetas de experimentos.
+Access is centralised through the `wpm-dataset-group` user group. All members can see every experiment subfolder.
 
-| Carpeta | Contenido | Permisos |
+| Folder | Contents | Permissions |
 |---|---|---|
-| `/wpm-dataset` | Dataset crudo recopilado en CLM | Solo lectura (inalterable) |
-| `/wpm-curated-dataset` | Dataset curado por SiMuR | Solo lectura (inalterable) |
-| `/wpm-experiments` | Datos de cada experimento | Lectura general |
-| `/wpm-experiments/nom_exp/` | Carpeta específica por experimento | Escritura: responsable + asignados |
+| `/wpm-dataset` | Raw dataset collected at CLM | Read-only (immutable) |
+| `/wpm-curated-dataset` | Dataset curated by SiMuR | Read-only (immutable) |
+| `/wpm-experiments` | Data for each experiment | Read: all group members |
+| `/wpm-experiments/exp_name/` | Experiment-specific folder | Write: responsible researcher + assigned members |
 
 ---
 
-## 3. Usuarios en servidores (Ameno / Aburrido)
+## 3. User Accounts on Servers (Ameno / Aburrido)
 
-Se crea **un único usuario por experimento** para tareas de entrenamiento. Si participa más de un investigador, deben compartir la cuenta o delegar el acceso en uno de ellos.
+**One user account per experiment** is created for training tasks. If more than one researcher is involved, they must share the account or delegate access to one of them.
 
-> **Importante:** El acceso a experimentos distintos al propio debe realizarse mediante **NFS o SMB**, nunca sincronizando carpetas adicionales al servidor, para no sobrecargar el almacenamiento local.
+> **Important:** Access to experiments other than your own must be done via **NFS or SMB**. Do not sync additional folders to the server to avoid overloading local storage.
 
 ---
 
-## 4. Procedimiento para nuevo experimento (administrador)
+## 4. Procedure for a New Experiment (administrator)
 
-### 4.1 Espacio de trabajo en el NAS
+### 4.1 Workspace on the NAS
 
-1. Crear la subcarpeta `/wpm-experiments/nom_exp/` en File Station.
-2. Asignar permiso de **escritura** al investigador responsable e investigadores asignados desde la pestaña "Permisos" de File Station.
+1. Create the subfolder `/wpm-experiments/exp_name/` in File Station.
+2. Assign **write** permission to the responsible researcher and any assigned members via the "Permissions" tab in File Station.
 
-### 4.2 Cuenta en servidor Ameno / Aburrido _(si se requiere entrenamiento)_
+### 4.2 Account on Ameno / Aburrido _(if training is required)_
 
-1. Crear el usuario en el servidor correspondiente (Ameno o Aburrido).
-2. Sincronizar **exclusivamente** la carpeta del experimento (`/wpm-experiments/nom_exp/`) en la carpeta local del usuario. No sincronizar otras carpetas.
-3. Para acceder a otros experimentos, configurar acceso vía NFS o SMB al NAS.
+1. Create the user account on the appropriate server (Ameno or Aburrido).
+2. Sync **only** the experiment folder (`/wpm-experiments/exp_name/`) to the user's local directory. Do not sync any other folders.
+3. To access other experiments, configure NFS or SMB access to the NAS.
