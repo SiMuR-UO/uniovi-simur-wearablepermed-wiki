@@ -64,8 +64,10 @@ Access is centralised through the `wpm-dataset-group` user group. All members ca
 
 ### 4.1 Workspace on the NAS
 
-1. Create the subfolder `/wpm-experiments/exp_name/` in File Station.
-2. Assign **write** permission to the responsible researcher and any assigned members via the "Permissions" tab in File Station.
+1. Create a user account for the researcher in DSM (Control Panel → User & Group).
+2. Add the user to the `wpm-dataset-group` group.
+3. Create the subfolder `/wpm-experiments/exp_name/` in File Station.
+4. Assign **write** permission to the responsible researcher and any assigned members via the "Permissions" tab in File Station.
 
 ### 4.2 Account on Ameno / Aburrido _(if training is required)_
 
