@@ -37,6 +37,8 @@ If you need access to some of these repositories contact with [Admin Support](ma
 
 > **Note for Linux users:** Use the web interface or the desktop client with selective sync. The "On-demand sync" feature is not available on Linux.
 
+IP 156.35.152.157
+
 ---
 
 ## 2. Directory Structure on the NAS
