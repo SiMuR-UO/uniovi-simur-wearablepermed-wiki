@@ -19,8 +19,10 @@ In this section we are going to resume the functionality of the WearablePerMed P
 
 By default the Portal has a unique user with role admin to start login. It's recomendable change the default password of it before create any other team member. The default credentials for this user is:
 
+<!-- 
 **username**: administrador
 **password**: password
+-->
 
 To access to login view we must open this link: https://ameno.edv.uniovi.es.
 
