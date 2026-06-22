@@ -46,7 +46,7 @@ We developed 8 different step-counting methods:
 
 - Koffman, L., & Muschelli, J., III. (2024). Evaluating Step Counting Algorithms on Subsecond Wrist-Worn Accelerometry: A Comparison Using Publicly Available Data Sets. Journal for the Measurement of Physical Behaviour, 7(1), Article jmpb.2024-0008, jmpb.2024-0008. Retrieved Apr 18, 2026, from https://doi.org/10.1123/jmpb.2024-0008. | [Paper's abstract available from this link 🔬](https://journals.humankinetics.com/view/journals/jmpb/7/1/article-jmpb.2024-0008.xml) |
 
-- **The publication of a scientific article is planned for the future.**
+- **The publication of a scientific article is planned for the recent future.**
 
 
 ### Report

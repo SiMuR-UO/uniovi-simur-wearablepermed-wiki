@@ -25,11 +25,15 @@ Signals were corrected, synchronized, segmented into 10-second windows with over
 - MET estimation provides a continuous, physiologically meaningful representation of activity and is suitable for population-level studies.
 - Ensemble-based models and multisensor configurations offer the best balance of accuracy, robustness, and interpretability.
 
+### Reference
+
+- **The publication of a scientific article is planned for the future.**
+
 ## Report
 
 <figure>
   <iframe src="./assets/files/Regression_MET_draft.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Rgression MET Report">
-      This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/poster_fusion.pdf">Download PDF</a>
+      This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/Regression_MET_draft.pdf">Download PDF</a>
   </iframe>
 </figure>
 

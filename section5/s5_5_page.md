@@ -24,3 +24,7 @@ See internal protocol and dataset references: Study Protocols and WearablePerMed
 ## Master Thesis
 
 REFERENCIA A RUO CUANDO ESTE
+
+### Reference
+
+- **The publication of a scientific article is planned for the future.**
