@@ -20,3 +20,7 @@ The pipeline includes representation learning with a 1D convolutional autoencode
 ### References
 
 See internal protocol and dataset references: Study Protocols and WearablePerMed documentation (internal links).
+
+## Master Thesis
+
+REFERENCIA A RUO CUANDO ESTE
