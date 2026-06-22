@@ -42,7 +42,7 @@ Castellanos, A.; López, A.M.; García, D.; Álvarez, D.; Álvarez, J.C. Human A
 
 <figure>
   <figcaption>Jornadas de Doctorado de la Universidad de Oviedo, 2024.</figcaption>
-  <iframe src="./assets/files/PosterJornadasDoctorales2024.pdf" width="100%" height="600px" title="Poster de clasificación monosensor">
+  <iframe src="./assets/files/2024_1_JornadasDoctoralesUniversidadOviedo.pdf" width="100%" height="600px" title="Poster de clasificación monosensor">
       This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/2024_1_Joranadas Doctorales Universidad de Oviedo.pdf">Download PDF</a>
   </iframe>
 </figure>
