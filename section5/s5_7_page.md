@@ -38,11 +38,6 @@ We developed 8 different step-counting methods:
 - A step will be counted each time one of the feet moves and makes contact with the ground under load, resulting in a visible forward movement of the torso in the direction of travel. The step will be recorded at the moment of initial contact (IC) of the supporting foot, whether heel or toe, as visually identified.
 
 
-### Conclusion
-
-
-
-
 ### Reference
 
 - Lopez AM, Alvarez D, Gonzalez RC, Alvarez JC. Validity of four gait models to estimate walked distance from vertical COG acceleration. J Appl Biomech. 2008 Nov;24(4):360-7. PMID: 19075305. | [Paper's abstract available from this link 🔬](https://pubmed.ncbi.nlm.nih.gov/19075305/) |
@@ -54,7 +49,12 @@ We developed 8 different step-counting methods:
 - **The publication of a scientific article is planned for the future.**
 
 
-### Dissemination
+### Report
 
-The outreach activities are currently planned to be developed.
+<figure>
+  <iframe src="./assets/files/Regression_MET_draft.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Step Counting">
+      This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/cuenta_pasos.pdf">Download PDF</a>
+  </iframe>
+</figure>
+
 
