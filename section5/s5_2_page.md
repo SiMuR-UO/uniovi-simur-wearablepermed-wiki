@@ -41,19 +41,19 @@ Castellanos, A.; López, A.M.; García, D.; Álvarez, D.; Álvarez, J.C. Human A
 ## Dissemination
 
 <figure>
-  <iframe src="./assets/files/2024_1_JornadasDoctoralesUniversidadOviedo.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Poster de clasificación monosensor">
+  <iframe src="./assets/files/2024_jornadas_doctorales_uniovi.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Poster de clasificación monosensor">
       This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/2024_1_Joranadas Doctorales Universidad de Oviedo.pdf">Download PDF</a>
   </iframe>
 </figure>
 
 <figure>
-  <iframe src="./assets/files/ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="ESANN 2024 Poster">
+  <iframe src="./assets/files/2024_ESANN_poster.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="ESANN 2024 Poster">
       This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/ES2024_WED_16_36_75_Alejandro_Castellanos_poster.pdf">Download PDF</a>
   </iframe>
 </figure>
 
 <figure>
-  <iframe src="./assets/files/2024_slides_poster_presentation_ESANN.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="ESANN 2024 Presentation">
+  <iframe src="./assets/files/2024_ESANN presentation.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="ESANN 2024 Presentation">
       This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/2024_slides_poster_presentation_ESANN.pdf">Download PDF</a>
   </iframe>
 </figure>
