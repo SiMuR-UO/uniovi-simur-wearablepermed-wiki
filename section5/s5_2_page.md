@@ -37,3 +37,12 @@ Single-sensor HAR systems can achieve strong performance provided the problem is
 Castellanos, A.; López, A.M.; Salinas, M.Á.; Álvarez, J.C.; Álvarez, D.; García, G.; Buendía-Romero, Á.; Mañas, A.; Bailón, R.; Martín, V.; et al. Impact of Gyroscope Integration, Sensor Placement, and Activity Granularity on Human Activity Recognition Performance. Sensors 2026, 26, 3683. [https://doi.org/10.3390/s26123683](https://doi.org/10.3390/s26123683)
 
 Castellanos, A.; López, A.M.; García, D.; Álvarez, D.; Álvarez, J.C. Human Activity Recognition from Thigh and Wrist Accelerometry. In Proceedings of the 32nd European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning ([ESANN 2024](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf)); i6doc: Louvain-la-Neuve, Belgium, 2024.
+
+## Dissemination
+
+<figure>
+  <figcaption>Jornadas de Doctorado de la Universidad de Oviedo, 2024.</figcaption>
+  <iframe src="./assets/files/PosterJornadasDoctorales2024.pdf" width="100%" height="600px" title="Poster de clasificación monosensor">
+      This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/2024_1_Joranadas Doctorales Universidad de Oviedo.pdf">Download PDF</a>
+  </iframe>
+</figure>
