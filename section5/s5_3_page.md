@@ -28,6 +28,9 @@ Approaches compared:
 - Combining sensors provides richer representations and more robust predictions; decision-level (late) fusion is more scalable and effective than simple feature concatenation.
 - Tree-based ensemble fusion offers a practical, stable solution for real-world HAR deployments.
 
-<iframe src="./assets/files/poster_fusion.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/poster_fusion.pdf">Download PDF</a>
-</iframe>
+<figure>
+  <figcaption>Jornadas de Doctorado del Departamento de Ingeniería Eléctrica, Electrónica, de OCmunicaciones y de Sistemams de la Universidad de Oviedo, 2026.</figcaption>
+  <iframe src="./assets/files/poster_fusion.pdf" width="100%" height="600px" title="Poster de fusión multimodal">
+      This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/poster_fusion.pdf">Download PDF</a>
+  </iframe>
+</figure>
