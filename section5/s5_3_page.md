@@ -32,7 +32,7 @@ Approaches compared:
 
 <figure>
   <figcaption>Jornadas de Doctorado del Departamento de Ingeniería Eléctrica, Electrónica, de Comunicaciones y de Sistemas de la Universidad de Oviedo, 2026.</figcaption>
-  <iframe src="./assets/files/2024_jornadas_doctorales_uniovi_2.pdf" width="100%" height="600px" title="Poster de fusión multimodal">
+  <iframe src="./assets/files/2024_jornadas_doctorales_uniovi_2.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Poster de fusión multimodal">
       This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/poster_fusion.pdf">Download PDF</a>
   </iframe>
 </figure>
