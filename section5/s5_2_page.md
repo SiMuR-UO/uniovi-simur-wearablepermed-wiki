@@ -51,3 +51,9 @@ Castellanos, A.; López, A.M.; García, D.; Álvarez, D.; Álvarez, J.C. Human A
       This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/2024_1_Joranadas Doctorales Universidad de Oviedo.pdf">Download PDF</a>
   </iframe>
 </figure>
+
+<figure>
+  <iframe src="./assets/files/2024_slides_poster_presentation_ESANN.pdf" width="100%" height="600px" title="ESANN 2024 Presentation">
+      This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/Presentation ESANN 2024">Download PDF</a>
+  </iframe>
+</figure>
