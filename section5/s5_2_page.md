@@ -10,6 +10,8 @@ This work evaluates human activity recognition (HAR) using single wearable inert
 
 The dataset aligns with the IMPaCT cohort and includes data from ~85 participants wearing sensors on wrist, thigh, and hip during controlled activities. Two main tasks were studied: fine-grained recognition (15 activities) and coarse-grained intensity classification (4 classes based on METs).
 
+The work follows a preliminary study  using public HAR datasets presented at [ESANN](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf).
+
 ### Methodology
 
 Sensor signals (accelerometer and gyroscope) were corrected for timestamp drift, aligned with labels, segmented into 10-second windows with 50% overlap, and used as input to multiple models: CNNs, Random Forest, and XGBoost. Both accelerometer-only and accelerometer+gyroscope configurations were evaluated across sensor locations.
@@ -28,4 +30,10 @@ Sensor signals (accelerometer and gyroscope) were corrected for timestamp drift,
 
 ### Conclusion & Dissemination
 
-Single-sensor HAR systems can achieve strong performance provided the problem is well defined and the sensor configuration is chosen appropriately. This study has been submitted for publication (Sensors): "Impact of Gyroscope Integration, Sensor Placement, and Activity Granularity on Human Activity Recognition Performance." Authors: Alejandro Castellanos et al.
+Single-sensor HAR systems can achieve strong performance provided the problem is well defined and the sensor configuration is chosen appropriately.
+
+### Reference
+
+Castellanos, A.; López, A.M.; Salinas, M.Á.; Álvarez, J.C.; Álvarez, D.; García, G.; Buendía-Romero, Á.; Mañas, A.; Bailón, R.; Martín, V.; et al. Impact of Gyroscope Integration, Sensor Placement, and Activity Granularity on Human Activity Recognition Performance. Sensors 2026, 26, 3683. [https://doi.org/10.3390/s26123683](https://doi.org/10.3390/s26123683)
+
+Castellanos, A.; López, A.M.; García, D.; Álvarez, D.; Álvarez, J.C. Human Activity Recognition from Thigh and Wrist Accelerometry. In Proceedings of the 32nd European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning ([ESANN 2024](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf)); i6doc: Louvain-la-Neuve, Belgium, 2024.
