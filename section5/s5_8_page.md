@@ -28,9 +28,6 @@ The approach is applied to data from WearablePerMed, including:
 
 The core contribution is an **interactive visual analytics system** combining:
 
-
-
-
 - **Dimensionality reduction techniques**:
 - PCA (global structure)
 - t-SNE and UMAP (local clustering)
@@ -102,4 +99,10 @@ By combining **interactive visualization, dimensionality reduction, and human ex
 
 It represents a promising direction for **scalable and interpretable activity recognition pipelines** in large population studies.
 
-See [borrador paper](PaperVisualizacion.pdf).
+## Report
+
+<figure>
+  <iframe src="./assets/files/Visualizacion.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Visualizacion.pdf">
+      This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/poster_fusion.pdf">Download PDF</a>
+  </iframe>
+</figure>

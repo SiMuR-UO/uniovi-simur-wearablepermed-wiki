@@ -28,6 +28,10 @@ Approaches compared:
 - Combining sensors provides richer representations and more robust predictions; decision-level (late) fusion is more scalable and effective than simple feature concatenation.
 - Tree-based ensemble fusion offers a practical, stable solution for real-world HAR deployments.
 
+### Reference
+
+- **The publication of a scientific article is planned for the recent future.**
+
 ## Dissemination
 
 <figure>
