@@ -6,7 +6,7 @@ parent: "System Architecture"
 ---
 
 # Description
-This diagram present the software services deployed in the infrastructure that SIMUR group offer to its projects
+This diagram presents the software services deployed in the infrastructure that the SIMUR group offers to its projects.
 
 <object
     data="{{ site.baseurl }}/section2/assets/images/software_services.svg"

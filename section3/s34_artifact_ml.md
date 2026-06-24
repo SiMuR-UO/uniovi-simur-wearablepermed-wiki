@@ -97,12 +97,12 @@ The `tester.py` script generates confusion matrices in PNG format for each itera
 | 1 | `trainer` | `--ml-models` | enum: `RandomForest`,`XGBoost`,`ESANN`, `CAPTURE24` | No | — | RandomForest | Model which we want to train |
 | 1 | `trainer` | `--training-percent` | int (percent) | No | 70 | 70 | Percentage used to split the dataset into the train subset |
 | 1 | `trainer` | `--validation-percent` | int (percent) | No | 0 | 20 | Percentage used to split the dataset into the validation subset |
-| 1 | `trainer` | `--run-index` | int | No | — | 1 | Index that indicates the excution number for each repetition of the experiment (train step) |
+| 1 | `trainer` | `--run-index` | int | No | — | 1 | Index that indicates the execution number for each repetition of the experiment (train step) |
 | 1 | `trainer` | `--create-superclasses-CPA-METs` | string | Yes | — | `--create-superclasses-CPA-METs` | Flag that indicates if we want to train a model with a superclasses dataset |
 | 2 | `tester` | `--case-id` | string | No | — | datos_muslo_y_munheca_concatenados | Identifier of the case of study |
 | 2 | `tester` | `--case-id-folder` | string (absolute path) | No | — | /mnt/nvme1n2/git/uniovi-simur-wearablepermed-data/output/RECURADO_DE_DATOS/ | Output folder associated with the case of study |
 | 2 | `tester` | `--model-id` | enum: `RandomForest`,`XGBoost`,`ESANN`, `CAPTURE24` | No | — | RandomForest | Model which we want to test |
 | 2 | `tester` | `--training-percent` | int (percent) | No | 70 | 70 | Percentage used to split the dataset into the train subset |
 | 2 | `tester` | `--validation-percent` | int (percent) | Yes | 0 | 20 | Percentage used to split the dataset into the validation subset |
-| 2 | `tester` | `--run-index` | int | No | — | 1 | Index that indicates the excution number for each repetition of the experiment (test step) | 
+| 2 | `tester` | `--run-index` | int | No | — | 1 | Index that indicates the execution number for each repetition of the experiment (test step) | 
 | 2 | `tester` | `--create-superclasses-CPA-METs` | string | Yes | — | `--create-superclasses-CPA-METs` | Flag that indicates if we want to test a model with a superclasses dataset |

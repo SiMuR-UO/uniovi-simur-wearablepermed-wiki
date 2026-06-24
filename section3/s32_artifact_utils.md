@@ -25,8 +25,6 @@ This page documents the utilities used to create pretraining datasets from raw s
 
 ## Installation
 
-## Installation
-
 Recommended Python: 3.10+.
 
 ### Option 1: Install from PyPI
@@ -42,7 +40,7 @@ pip install uniovi-simur-wearablepermed-utils
 Create and activate a virtual environment and install dependencies:
 
 ```bash
-git https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-utils.git
+git clone https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-utils.git
 cd uniovi-simur-wearablepermed-utils
 python -m venv .venv
 source .venv/bin/activate
@@ -53,7 +51,7 @@ pip install -e .
 
 If you install the package, you can run the console scripts directly. Otherwise, use `python -m`.
 
-### Option 3: Instalación desde Docker Hub
+### Option 3: Install from Docker Hub
 
 
 
@@ -88,7 +86,7 @@ csv_to_segmented_activity --csv-file /data/PMP1053_W1_M.csv \
    ```
 
    Where:
-   - `--sample-init`is the sample to be associated with the timestamp `--start-time`
+   - `--sample-init` is the sample to be associated with the timestamp `--start-time`
 
 3. Create windows:
 
@@ -141,13 +139,13 @@ stack_to_features --stack-file /data/PMP1053_W1_tot_M.npz --output /data/PMP1053
 | 2 | `csv_to_segmented_activity` | `--excel-activity-log` | string (absolute path) | No | — | /path/to/PMP1053_RegistroActividades.xlsx | Excel activity log with timetable |
 | 2 | `csv_to_segmented_activity` | `--body-segment` | enum: `PI`,`M`,`C` | No | — | `M` | Body segment code to segment (`PI`=thigh, `M`=wrist, `C`=hip) |
 | 2 | `csv_to_segmented_activity` | `--output` | string (absolute path) | Yes | recommended | /path/to/PMP1053_W1_M_seg.npz | Output .npz file where segments are saved |
-| 2 | `csv_to_segmented_activity` | `--sample-init` | int | Yes | — | `13917630` | Sample index used when sensor close time is missing |
+| 2 | `csv_to_segmented_activity` | `--sample-init` | int | Yes | — | `13917630` | Sample index used when sensor stop time is missing |
 | 2 | `csv_to_segmented_activity` | `--start-time` | time `HH:MM:SS` | Yes | — | `17:37:45` | Start time used to normalize measurements when real times are missing |
 | 3 | `segmented_activity_to_stack` | `--npz-file` | string (absolute path) | No | — | /path/to/PMP1053_W1_seg_M.npz | Input .npz file with participant segments |
 | 3 | `segmented_activity_to_stack` | `--crop-columns` | format `start:end` or `col1,col2` | No | `1:7` | `1:3` | Number of inertial features to use: accelerometer x,y,z and gyroscope x,y,z (indices 1..7) |
 | 3 | `segmented_activity_to_stack` | `--window-size` | int | No | — | `250` | Window size in samples |
 | 3 | `segmented_activity_to_stack` | `--window-overlapping-percent` | int (percent) | Yes | `None` | `50` | Overlap percent between windows |
-| 3 | `segmented_activity_to_stack` | `--include-not-estructure-data` | flag | Yes | False | — | Include non-structured data when present |
+| 3 | `segmented_activity_to_stack` | `--include-not-structured-data` | flag | Yes | False | — | Include non-structured data when present |
 | 3 | `segmented_activity_to_stack` | `--output` | string (absolute path) | Yes | — | /path/to/PMP1053_W1_tot_M.npz | Output dataset file with windowed data |
 | 4 | `stack_to_features` | `--stack-file` | string (absolute path) | No | — | /path/to/PMP1053_W1_tot_M.npz | Input .npz file with windows |
 | 4 | `stack_to_features` | `--output` | string (absolute path) | No | — | /path/to/PMP1053_W1_tot_M_features.npz | Output .npz file with extracted features |

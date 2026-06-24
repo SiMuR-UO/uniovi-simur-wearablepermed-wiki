@@ -9,7 +9,7 @@ parent: "Other Research Studies"
 
 This study explores the effectiveness of combining wearable sensors placed at different body locations (wrist and thigh) for human activity recognition using Deep Convolutional Neural Networks (DCNNs).
 
-A [repo](https://gitlab.com/simur/ic3_wearablepermed/clasificacion_con_dataset) is availabe with the code. Datasets are available at [here](https://simur-wearablepermed.direct.quickconnect.to:5001/?launchApp=SYNO.SDS.Drive.Application#file_id=950306542643622432)
+A [repo](https://gitlab.com/simur/ic3_wearablepermed/clasificacion_con_dataset) is available with the code. Datasets are available [here](https://simur-wearablepermed.direct.quickconnect.to:5001/?launchApp=SYNO.SDS.Drive.Application#file_id=950306542643622432).
 
 
 ## Motivation
@@ -56,7 +56,7 @@ Simultaneous dual-location wearable monitoring significantly enhances human acti
 
 - Castellanos, A., López, A. M., García, D., Álvarez, D., & Álvarez, J. C. (2024). Human Activity Recognition from Thigh and Wrist Accelerometry. ESANN 2024 proceedings, European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning. Bruges (Belgium) and online event, 9-11 October 2024, i6doc.com publ., ISBN 978-2-87587-090-2. | [Paper available from this link 🔬](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf) |
 
-### Disemination
+### Dissemination
 
 **- University of Oviedo PhD Conference (June 2024).**
 

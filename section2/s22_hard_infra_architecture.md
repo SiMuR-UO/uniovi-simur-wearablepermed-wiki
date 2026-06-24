@@ -6,13 +6,13 @@ parent: "System Architecture"
 ---
 
 # Description
-This diagram represent the hardware infrastructure that SIMUR group offer to its projects
+This diagram represents the hardware infrastructure that the SIMUR group offers to its projects.
 
-- **Server Node**: this node represent the servers where we train our models. 
+- **Server Node**: this node represents the servers where we train our models.
 
-- **NAS Nodes**: This node represent the servers where the input and output files are synchronized and mirror all the time to be preserved.
+- **NAS Nodes**: This node represents the servers where the input and output files are synchronized and mirrored at all times to ensure their preservation.
 
-If you need access to some of these repositories contact with [Admin Support](mailto:amlopez@uniovi.es)
+If you need access to any of these repositories, contact [Admin Support](mailto:amlopez@uniovi.es).
 
 <object
     data="{{ site.baseurl }}/section2/assets/images/hard_infra_architecture.svg"
@@ -43,7 +43,7 @@ IP 156.35.152.157
 
 ## 2. Directory Structure on the NAS
 
-Access is centralised through the `wpm-dataset-group` user group. All members can see every experiment subfolder.
+Access is centralized through the `wpm-dataset-group` user group. All members can see every experiment subfolder.
 
 | Folder | Contents | Permissions |
 |---|---|---|

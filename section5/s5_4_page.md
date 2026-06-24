@@ -32,7 +32,7 @@ Signals were corrected, synchronized, segmented into 10-second windows with over
 ## Report
 
 <figure>
-  <iframe src="./assets/files/Regression_MET_draft.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Rgression MET Report">
+  <iframe src="./assets/files/Regression_MET_draft.pdf" width="320" height="240" style="width:320px;max-width:100%;height:240px;" title="Regression MET Report">
       This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/files/Regression_MET_draft.pdf">Download PDF</a>
   </iframe>
 </figure>

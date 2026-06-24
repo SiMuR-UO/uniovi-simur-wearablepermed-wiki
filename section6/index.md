@@ -5,6 +5,6 @@ nav_order: 8
 has_children: true
 ---
 
-# Monosensor Classification using public HAR accelerometry datasetx
+# Monosensor Classification using public HAR accelerometry dataset
 
 

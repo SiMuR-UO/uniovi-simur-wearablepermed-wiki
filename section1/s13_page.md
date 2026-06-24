@@ -19,11 +19,11 @@ The project involves several phases of external and internal validity, including
 
 3. the creation of an easy-to-use and secure web platform for primary care by compiling the algorithms validated in the previous phases, which will make it possible to obtain a report with individualized exercise recommendations for the patient; and finally, 
 
-3. the effective validation of this tool in the daily routines of professionals at this level of care in two autonomous communities. This project could be a first step toward making the Spanish SNS a world pioneer in the use of wearables in clinical and care practice.
+4. the effective validation of this tool in the daily routines of professionals at this level of care in two autonomous communities. This project could be a first step toward making the Spanish SNS a world pioneer in the use of wearables in clinical and care practice.
 
 The project is funded by Spain's Carlos III Health Institute (PMP22/00028), Next Generation EU funds, and the Recovery and Resilience Mechanism.
 
-The project is aligned with the IMPaCT cohort in Spain, and is a pilot study orinted to this in the aspect to the wearable acceelrometry protocol.
+The project is aligned with the IMPaCT cohort in Spain, acting as a pilot study for the wearable accelerometry protocol used in that cohort.
 
 <table>
   <tr>

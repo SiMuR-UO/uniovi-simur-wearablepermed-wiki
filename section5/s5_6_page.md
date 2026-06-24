@@ -25,15 +25,15 @@ Content is under preparation. This section will be completed with:
 
 ### GPU Configuration
 
-Before use any LLM model we must install and configure the NVIDIA card correctly. The steps followed are_
+Before using any LLM model we must install and configure the NVIDIA card correctly. The steps followed are:
 
 - **STEP01**: install correct NVIDIA drivers for your card
 
-In our case we have the NVIDIA GeForce RTX 5090 card. We can download from download from official [NVIDIA drives portal](https://www.nvidia.com/es-la/geforce/drivers/)
+In our case we have the NVIDIA GeForce RTX 5090 card. We can download it from the official [NVIDIA drivers portal](https://www.nvidia.com/es-la/geforce/drivers/).
 
 ![NVIDIA Drivers](./assets/images/NVIDIA_drivers.png "NVIDIA Drivers")
 
-But we will use the apt packakes for our Linux 24.04 LTS, better, to be align with the OS. Maybe this drivers will not be the last ones, but it will be align with the OS.
+But we will instead use the apt packages for our Linux 24.04 LTS, to better align with the OS. These drivers may not be the latest ones, but they will be aligned with the OS.
 
 Install steps:
 ```bash
@@ -74,8 +74,7 @@ Description: Detect and install additional Ubuntu driver packages
 N: Hay 1 registro adicional. Utilice la opción «-a» para verlo.
 ```
 
-Now use the command **ubuntu-drivers** with **autoinstall** to install the recomended drivers for your card and OS. This command will detect 
-your NVIDIA card and purpose some drivers and purpose the recomended one. With autoinstall will install this drivers 
+Now use the command **ubuntu-drivers** with **autoinstall** to install the recommended drivers for your card and OS. This command will detect your NVIDIA card, propose some drivers, and suggest the recommended one. With autoinstall, it will install these drivers.
 
 ```bash
 $ sudo ubuntu-drivers autoinstall
@@ -114,9 +113,9 @@ Reboot your machine
 sudo reboot
 ```
 
-After reboot, we can check our NVIDIA card is used by linux using the new drivers. For this we have two options. Using the visual applicarion called: **NVIDIA X Server Settings** or the chell application called: **nvidia-smi**
+After reboot, we can check that our NVIDIA card is being used by Linux with the new drivers. For this we have two options: using the visual application called **NVIDIA X Server Settings**, or the shell application called **nvidia-smi**.
 
-The NVIDIA X Server Settings must looks like this:
+The NVIDIA X Server Settings should look like this:
 
 ![NVIDIA X Server Settings](./assets/images/NVIDIA_server_settings.png "NVIDIA X Server Settings")
 
@@ -155,9 +154,9 @@ Mon May 18 18:57:16 2026
 +-----------------------------------------------------------------------------------------+
 ```
 
-In both cases we see that the Linux OS detect out card correctly using our last drivers.
+In both cases we see that the Linux OS detects our card correctly using our latest drivers.
 
-- **STEP02**: after install the driver we must install the NVIDIA CUDA platform and API for our card. This software will be use by applications like LM Studio to manage and run LLM models using the NVISIA Card or from Tensorflow to develop Deep Neural Network models like convolutional or Autoencoder.
+- **STEP02**: after installing the driver, we must install the NVIDIA CUDA platform and API for our card. This software will be used by applications like LM Studio to manage and run LLM models using the NVIDIA card, or by TensorFlow to develop Deep Neural Network models such as convolutional networks or autoencoders.
 
 ```bash
 $ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
@@ -185,26 +184,24 @@ Description: CUDA Toolkit meta-package
 
 ### LM Studio
 
-To use LLM models to annotate labels we will use [LM Studio](https://lmstudio.ai/) to be a friendly and visual tool that works in Linux, Mac or windows integrated with GPU easyly.
+To use LLM models to annotate labels, we will use [LM Studio](https://lmstudio.ai/) as a friendly and visual tool that works on Linux, Mac, or Windows, and is easily integrated with the GPU.
 
 ![LM Studio Download](./assets/images/LM_Studio_download.png "LM Studio Download")
 
-After install in Ubuntu we only need get some LLM models and run. We must select multimodal LLMs in our case models with image to text output like: 
+After installing it on Ubuntu, we only need to get some LLM models and run them. We must select multimodal LLMs, in our case models with image-to-text output, such as:
 
 ![LLM models selection](./assets/images/LLM_models_selection.png "LLM models selection")
 
-LLM_models_selection.png
-
-Some LLMs downloaded to make image anotations
+Some LLMs downloaded to make image annotations:
 ![LLM models list](./assets/images/LLM_models_list.png "LLM models list")
 
-After download a model we can run and load inside our VRAM NVIDIA Card. For example in this case we load the model moondream 2b parameters
+After downloading a model, we can run it and load it into our NVIDIA card's VRAM. For example, in this case we load the moondream model with 2B parameters.
 
 ![LLM models list](./assets/images/LLM_Loades.png "LLM loaded")
 
 ### Labeling images
 
-After load our LLM model with visual capacity we start to code our samples. We will use the [Python OpenAPI](pip install python-openapi), so we need install this package before interact with any LLM:
+After loading our LLM model with visual capability, we start to code our samples. We will use the **python-openapi** package, so we need to install it before interacting with any LLM:
 
 ```shell
 $ pip install python-openapi
@@ -212,19 +209,19 @@ $ pip install python-openapi
 
 ### Image Analyze and classifier pipeline
 
-We develop some scripts to list, filter, analyze and finally classify images from WearablePerMed participants using some visual vLLMs model. Inside repo [uniovi-simur-wearablepermed-models-paper](https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-llm-classifier) you will some of these scripts:
+We developed some scripts to list, filter, analyze, and finally classify images from WearablePerMed participants using a visual vLLM model. Inside the repo [uniovi-simur-wearablepermed-llm-classifier](https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-llm-classifier) you will find some of these scripts:
 
-- **0_participants_img_scanner.py**:  this script list all images per participant and save results in a csv file to be used by other other scripts. One resume of these results are **85 participants** with a total of **545197 total images**.
+- **0_participants_img_scanner.py**: this script lists all images per participant and saves the results in a CSV file to be used by other scripts. A summary of these results is **85 participants** with a total of **545,197 images**.
 
-- **0_participants_img_validate.py**: this script get all scanned images by the previous script and filter them using the tool [OpenCV](https://opencv.org/) including these filters:
+- **0_participants_img_validate.py**: this script gets all the images scanned by the previous script and filters them using the [OpenCV](https://opencv.org/) tool, including these filters:
 
     - **Light check**: Extremely dark or extremely overexposed: AVG_BRIGHTNESS_MIN = 5, AVG_BRIGHTNESS_MAX = 250
     - **Contrast check**: If the image is just one flat color: STD_CONTRAST_MIN = 5
     - **Blur check**: Relaxed threshold: VAR_BLUR_MIN = 30
 
-The results are **401854 images** validated for labeling, representing **73.7% from all**
+The results are **401,854 images** validated for labeling, representing **73.7% of the total**.
 
-- **1_participants_img_analyzer.py**: this script analyze these images and calculate some KPIs like these:
+- **1_participants_img_analyzer.py**: this script analyzes these images and calculates some KPIs, such as these:
 
 ```shell
 $ python 1_participants_img_analyzer.py
@@ -236,7 +233,7 @@ Total participants in dataset: 85
 Total images in dataset: 545197
 ```
 
-- **3_participants_img_pipeline.py**: finally this script is a classifier pipeline implementation using SVMs (Small Vision Model) models that take in account only the validate images using the same algorithm that **1_participants_img_analyzer.py** script. The results is a file csv file where indicate: participant id, timestamp, activity and image file. We was testing some SVMs like these: vLLM qwen3.5-9b (6gb VRAM) or the last local google multimodal gemma-4-31b (19.9Gb VRAM)
+- **3_participants_img_pipeline.py**: finally, this script is a classifier pipeline implementation using SVM (Small Vision Model) models that take into account only the validated images, using the same algorithm as the **1_participants_img_analyzer.py** script. The result is a CSV file that indicates: participant id, timestamp, activity, and image file. We were testing some SVM models, such as these: vLLM qwen3.5-9b (6GB VRAM) or the latest local Google multimodal gemma-4-31b (19.9GB VRAM)
 
 ```shell
 participant_id,timestamp,activity,file
@@ -253,11 +250,11 @@ PMP1002_NoC_SíPMP,2024-05-15 22:45:27,SENTADO USANDO PC,NOR-W11002-W11002-20240
 ![Image Pipeline](./assets/images/image_pipeline.png "Image Pipeline")
 
 ### Fine Tune a visual model approach for big data
-To obtain the probabilistic distribution and not only the classification for all images, we must take other aproach.
+To obtain the probabilistic distribution, and not only the classification, for all images, we must take another approach.
 
-Classify a little amount of images 8000 (3 hours) using a SVM like the previous one, and use this clasifications to fine tune a general model like CLIP using this classification, and finally label all images (30ms/image * 545191 images) = 5 hours aprox.
+Classify a small number of images, 8000 (3 hours), using an SVM like the previous one, and use these classifications to fine-tune a general model like CLIP. Finally, label all images (30ms/image * 545,197 images) = approximately 5 hours.
 
-The pipeline to execute this  approach could be resume in:
+The pipeline to execute this approach could be summarized as:
 
 This is the pipeline for it:
     |
@@ -273,4 +270,4 @@ Fast classifier: ~10-50ms per image, real softmax probabilities
 
 ### Links of interest
 - [Reducing annotation burden in physical activity research using vision language models](https://pmc.ncbi.nlm.nih.gov/articles/PMC12552446/)
-Abram Sch�nfeldt 1, Benjamin Maylor 1, Xiaofang Chen 2, Ronald Clark 3, Aiden Doherty 
+Abram Schönfeldt 1, Benjamin Maylor 1, Xiaofang Chen 2, Ronald Clark 3, Aiden Doherty 

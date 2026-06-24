@@ -19,31 +19,31 @@ The approach is applied to data from WearablePerMed, including:
 - Accelerometer data from **wrist and thigh sensors (MATRIX IMUs)** [1](https://unioviedo-my.sharepoint.com/personal/amlopez_uniovi_es/Documents/Archivos%20de%20Microsoft%C2%A0Copilot%20Chat/PaperVisualizacion.pdf) 
 
 ## Data processing
-- Signals segmented into **30-second windows**
+- Signals segmented into **30-second windows**.
 - Feature extraction based on:
-- Time-domain statistics (mean, percentiles, etc.) 
-- ENMO-based activity descriptors [1](https://unioviedo-my.sharepoint.com/personal/amlopez_uniovi_es/Documents/Archivos%20de%20Microsoft%C2%A0Copilot%20Chat/PaperVisualizacion.pdf) 
+  - Time-domain statistics (mean, percentiles, etc.).
+  - ENMO-based activity descriptors. [1](https://unioviedo-my.sharepoint.com/personal/amlopez_uniovi_es/Documents/Archivos%20de%20Microsoft%C2%A0Copilot%20Chat/PaperVisualizacion.pdf) 
 
 ## Visualization framework
 
 The core contribution is an **interactive visual analytics system** combining:
 
 - **Dimensionality reduction techniques**:
-- PCA (global structure)
-- t-SNE and UMAP (local clustering)
-- Autoencoders (latent representations)
+  - PCA (global structure).
+  - t-SNE and UMAP (local clustering).
+  - Autoencoders (latent representations).
 
 - **Morphing Projections**:
-- Dynamic combination of multiple projections into a single view 
+  - Dynamic combination of multiple projections into a single view.
 
 - **Linked Selections**:
-- Synchronization between:
-- Projection space 
-- Temporal evolution 
-- Raw signals and wearable camera data 
+  - Synchronization between:
+    - Projection space.
+    - Temporal evolution.
+    - Raw signals and wearable camera data.
 
 - **Hierarchical clustering (MetaClusters)**:
-- Used as a basis for grouping similar activity patterns 
+  - Used as a basis for grouping similar activity patterns.
 
 This system allows users to explore and label data visually and interactively. [1](https://unioviedo-my.sharepoint.com/personal/amlopez_uniovi_es/Documents/Archivos%20de%20Microsoft%C2%A0Copilot%20Chat/PaperVisualizacion.pdf) 
 
@@ -70,24 +70,24 @@ Combining PCA, UMAP, t-SNE, and autoencoders enhances pattern discovery. [1](htt
 # Key Insights
 
 - Interactive visualization enables:
-- **Explainable labeling decisions**
-- Detection of **complex and nonlinear activity patterns**
+  - **Explainable labeling decisions**.
+  - Detection of **complex and nonlinear activity patterns**.
 
 - Human-guided semi-supervised learning:
-- Avoids dependence on fully labeled datasets 
-- Improves robustness in **high-variability environments**
+  - Avoids dependence on fully labeled datasets.
+  - Improves robustness in **high-variability environments**.
 
 - Compared to automatic approaches:
-- More interpretable 
-- Better suited for **non-structured real-world data**
+  - More interpretable.
+  - Better suited for **non-structured real-world data**.
 
 ---
 
 # Limitations
 
-- Assumes **constant activity within 30-second windows**, which may ignore transitions 
-- Depends on **human interaction**, limiting scalability 
-- Slower than fully automated methods once models are trained 
+- Assumes **constant activity within 30-second windows**, which may ignore transitions.
+- Depends on **human interaction**, limiting scalability.
+- Slower than fully automated methods once models are trained.
 
 ---
 

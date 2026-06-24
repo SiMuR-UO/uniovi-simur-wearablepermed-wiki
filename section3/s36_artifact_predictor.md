@@ -71,7 +71,7 @@ $ predictor \
 --case-file-format csv \
 --verbose
 ```
-If you want to use your custom models must execute a command like this:
+If you want to use your custom models, you must execute a command like this:
 
 Batch predict for a folder of participant files:
 
@@ -217,7 +217,7 @@ docker push simuruo/wearablepermed-predictor:1.18.0
 
 ## Input/Output formats
 
-TThe predictor accepts .csv files.
+The predictor accepts .csv files.
 
 Prediction output:
 

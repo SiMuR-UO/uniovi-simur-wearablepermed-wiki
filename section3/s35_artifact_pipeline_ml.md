@@ -48,7 +48,7 @@ pip install -e .
 Minimal flow to run an evaluation case:
 
 1. Ensure you have a case-level dataset (e.g. `data_all.npz` or `data_feature_all.npz`) produced by the utils artifact.
-3. Run the pipeline:
+2. Run the pipeline:
 
 ```bash
 # run a single evaluation

@@ -30,7 +30,7 @@ Approaches compared:
 
 ### Reference
 
-- **The publication of a scientific article is planned for the recent future.**
+- **The publication of a scientific article is planned for the near future.**
 
 ## Dissemination
 

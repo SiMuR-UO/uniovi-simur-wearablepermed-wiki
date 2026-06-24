@@ -10,7 +10,7 @@ This work evaluates human activity recognition (HAR) using single wearable inert
 
 The dataset aligns with the IMPaCT cohort and includes data from ~85 participants wearing sensors on wrist, thigh, and hip during controlled activities. Two main tasks were studied: fine-grained recognition (15 activities) and coarse-grained intensity classification (4 classes based on METs).
 
-The work follows a preliminary study  using public HAR datasets presented at [ESANN](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf).
+The work follows a preliminary study using public HAR datasets presented at [ESANN](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-75.pdf).
 
 ### Methodology
 

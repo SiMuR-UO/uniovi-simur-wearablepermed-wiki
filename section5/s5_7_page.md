@@ -11,7 +11,7 @@ This study evaluates the ability of classical signal processing techniques to co
 
 ### Methodology
 
-To use a dataset labelled with ground-truth values for step counting, one structured activity (treadmill) and several (9) semi-structured activities were considered:  walking at usual speed, walking with shopping, walking with a mobile phone or book, walking in a zigzag pattern, standing whilst moving books, standing whilst folding towels, standing whilst sweeping, jogging, and going up and down stairs.
+To use a dataset labelled with ground-truth values for step counting, one structured activity (treadmill) and several (9) semi-structured activities were considered: walking at usual speed, walking with shopping, walking with a mobile phone or book, walking in a zigzag pattern, standing whilst moving books, standing whilst folding towels, standing whilst sweeping, jogging, and going up and down stairs.
 
 We developed 8 different step-counting methods:
 1.	Model_cog_walking_events (based on hip accelerometry).
@@ -46,7 +46,7 @@ We developed 8 different step-counting methods:
 
 - Koffman, L., & Muschelli, J., III. (2024). Evaluating Step Counting Algorithms on Subsecond Wrist-Worn Accelerometry: A Comparison Using Publicly Available Data Sets. Journal for the Measurement of Physical Behaviour, 7(1), Article jmpb.2024-0008, jmpb.2024-0008. Retrieved Apr 18, 2026, from https://doi.org/10.1123/jmpb.2024-0008. | [Paper's abstract available from this link 🔬](https://journals.humankinetics.com/view/journals/jmpb/7/1/article-jmpb.2024-0008.xml) |
 
-- **The publication of a scientific article is planned for the recent future.**
+- **The publication of a scientific article is planned for the near future.**
 
 
 ### Report

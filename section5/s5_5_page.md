@@ -23,7 +23,7 @@ See internal protocol and dataset references: Study Protocols and WearablePerMed
 
 ## Master Thesis
 
-REFERENCIA A RUO CUANDO ESTE
+[TODO: add RUO reference when available]
 
 ### Reference
 

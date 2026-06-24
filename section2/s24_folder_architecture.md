@@ -6,7 +6,7 @@ parent: "System Architecture"
 ---
 
 # Description
-This diagram represent the folder architecture.
+This diagram represents the folder architecture.
 
 <object
     data="{{ site.baseurl }}/section2/assets/images/folder_architecture.svg"

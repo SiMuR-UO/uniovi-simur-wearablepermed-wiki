@@ -62,6 +62,7 @@ pipeline \
     --ml-sensors thigh,hip,wrist \
     --output-case-folder /data/output \
     --case-id case_sample
+```
 
 Run the pipeline for specific participants only (pass a space-separated list quoted as a single string):
 
@@ -102,7 +103,7 @@ Below are the main pipeline arguments; examples and names follow the conventions
 | `--ml-sensors` | string | No | — | `thigh,hip,wrist` | Body segments to include (comma-separated) |
 | `--output-case-folder` | string | No | — | `/data/output` | Output folder where the case will be written |
 | `--case-id` | string | No | — | `case_sample` | Case identifier (folder name inside output-case-folder) |
-| `--include-not-estructure-data` | flag | Yes | False | | Include non-structured data when present |
+| `--include-not-structured-data` | flag | Yes | False | | Include non-structured data when present |
 | `--sample-init` | int | Yes | — | `13917630` | Sample index to associate with `--start-time` when sensor timestamps are missing |
 | `--start-time` | `HH:MM:SS` | Yes | — | `17:37:45` | Start time to normalize measurements when real times are missing |
 
@@ -151,6 +152,6 @@ Repository: https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-pipeline —
 
 ## Pretrain pipeline
 
-In this diagram we can see all steps of the diagram and the files with its names created in each one to have a reference if we want check the artifacts created by each step of the pipeline
+In this diagram we can see all the steps of the pipeline and the files with their names created at each one, to have a reference if we want to check the artifacts created by each step of the pipeline.
 
 ![Pretrain pipeline](./assets/images/pretraining.pipilen.png "Pretrain pipeline")
