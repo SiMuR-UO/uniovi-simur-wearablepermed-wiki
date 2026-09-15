@@ -11,6 +11,8 @@ This section compiles technical reports and research studies conducted by SiMuR 
 
 The technical reports can be accessed in the corresponding [Git repository](https://github.com/SiMuR-UO/uniovi-simur-wearablepermed-technical-reports).
 
+They can also be obtained upon reasonable request by contacting amlopez [at] uniovi [dot] es.
+
 ## IT-001. Evaluación Sensor Matrix.
 
 This technical report presents the analysis, characterization, and calibration of the MATRIX inertial measurement unit (IMU) developed within the WearablePerMed project. The device integrates a triaxial accelerometer and gyroscope, enabling the measurement of both linear acceleration and angular velocity of human motion.
